@@ -36,7 +36,7 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
 </list>
 
 ---
-<h1 id="modul1">Pengantar Algoritma Pemograman</h1>
+<h1 id="modul1">1. Pengantar Algoritma Pemograman</h1>
 
 ### Algoritma & Pemrograman
 
@@ -71,23 +71,23 @@ Ada banyak IDE yang tersedia untuk bahasa C, antara lain:
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
 </div>
 
-<h1 id="modul2">Pemrograman Dasar C</h1>
+<h1 id="modul2">2. Pemrograman Dasar C</h1>
 
-Struktur dasar program C terdiri dari tiga bagian utama, yaitu:
+### Struktur dasar program C terdiri dari tiga bagian utama, yaitu:
+- Judul program: Bagian ini berisi nama program dan keterangan singkat tentang program.
+- Header file: Bagian ini berisi deklarasi fungsi-fungsi yang akan digunakan dalam program.
+- Deklarasi: Bagian ini berisi deklarasi variabel, konstanta, dan tipe data yang akan digunakan dalam program.
+- Deskripsi: Bagian ini berisi inti program, yaitu langkah-langkah penyelesaian masalah.
 
-Judul program: Bagian ini berisi nama program dan keterangan singkat tentang program.
-Header file: Bagian ini berisi deklarasi fungsi-fungsi yang akan digunakan dalam program.
-Deklarasi: Bagian ini berisi deklarasi variabel, konstanta, dan tipe data yang akan digunakan dalam program.
-Deskripsi: Bagian ini berisi inti program, yaitu langkah-langkah penyelesaian masalah.
-Judul program ditulis dalam bentuk komentar. Komentar dalam C dimulai dengan tanda pagar (#) diikuti dengan teks komentar.
+Judul program ditulis dalam bentuk komentar. Komentar dalam C dimulai dengan tanda pagar `(#)` diikuti dengan teks komentar.
 
-Header file ditulis dengan menggunakan preprocessor directive #include. Preprocessor directive adalah bagian dari kode program yang akan dieksekusi oleh preprocessor sebelum kode program dijalankan.
+Header file ditulis dengan menggunakan preprocessor directive `#include`. Preprocessor directive adalah bagian dari kode program yang akan dieksekusi oleh preprocessor sebelum kode program dijalankan.
 
-Deklarasi ditulis dengan menggunakan keyword int, char, float, double, atau struct.
+Deklarasi ditulis dengan menggunakan keyword `int`, `char`, `float`, `double`, atau `struct`.
 
-Deskripsi ditulis dengan menggunakan blok kode yang diawali dengan tanda kurung kurawal buka { dan diakhiri dengan tanda kurung kurawal tutup }.
+Deskripsi ditulis dengan menggunakan blok kode yang diawali dengan tanda kurung kurawal buka `{` dan diakhiri dengan tanda kurung kurawal tutup `}`.
 
-Berikut adalah contoh struktur dasar program C:
+*Example :*
 
 ```
 /* Program Hello World */
@@ -108,33 +108,34 @@ int main() {
 ```
 Pada contoh program di atas, struktur dasar program C terdiri dari:
 
-Judul program: "Program Hello World"
-Header file: <stdio.h>
-Deklarasi:
-Variabel a dengan tipe data int
-Variabel b dengan tipe data char
-Deskripsi:
-Mencetak nilai variabel a ke layar
-Mencetak nilai variabel b ke layar
-Proses Input & Output
+- Judul program: "Program Hello World"
+- Header file: <stdio.h>
+- Deklarasi:
+  - Variabel a dengan tipe data int
+  - Variabel b dengan tipe data char
+- Deskripsi:
+  - Mencetak nilai variabel a ke layar
+  - Mencetak nilai variabel b ke layar
 
-Proses input dan output adalah salah satu proses penting dalam pemrograman. Proses input digunakan untuk memasukkan data dari luar program, sedangkan proses output digunakan untuk menampilkan data ke luar program.
+### Proses Input & Output
 
-Dalam bahasa C, proses input dan output dapat dilakukan dengan menggunakan fungsi-fungsi standar yang tersedia dalam header file stdio.h.
+Proses input dan output adalah salah satu proses penting dalam pemrograman. Proses input digunakan untuk memasukkan data dari luar program, sedangkan proses output digunakan untuk menampilkan data ke luar program. <br>
 
-Fungsi input
+Dalam bahasa C, proses input dan output dapat dilakukan dengan menggunakan fungsi-fungsi standar yang tersedia dalam header file `stdio.h`.
+
+### Fungsi input
 
 Berikut adalah beberapa fungsi input yang tersedia dalam header file stdio.h:
+- scanf(): Fungsi untuk membaca data dari keyboard.
+- getchar(): Fungsi untuk membaca satu karakter dari keyboard.
 
-scanf(): Fungsi untuk membaca data dari keyboard.
-getchar(): Fungsi untuk membaca satu karakter dari keyboard.
-Fungsi output
+### Fungsi output
 
-Berikut adalah beberapa fungsi output yang tersedia dalam header file stdio.h:
+Berikut adalah beberapa fungsi output yang tersedia dalam header file `stdio.h`:
+- printf(): Fungsi untuk menampilkan teks ke layar.
+- putchar(): Fungsi untuk menampilkan satu karakter ke layar.
 
-printf(): Fungsi untuk menampilkan teks ke layar.
-putchar(): Fungsi untuk menampilkan satu karakter ke layar.
-Berikut adalah contoh penggunaan fungsi input dan output:
+*Example :*
 
 ```
 /* Program input dan output */
