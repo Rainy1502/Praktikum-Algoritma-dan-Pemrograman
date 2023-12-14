@@ -296,3 +296,55 @@ Keywords tidak dapat digunakan sebagai nama variabel
 
 ---
 <h1 id="modul4">4. Operator</h1>
+
+### Operator Aritmatika
+Operator aritmatika digunakan untuk melakukan operasi aritmatika, seperti penjumlahan, pengurangan, perkalian, pembagian, dan sisa bagi
+
+Berikut adalah operator aritmatika dalam bahasa C:
+|   Operator	  | Deskripsi     |
+| ------------- | ------------- |
+|     `+`   	  | Penjumlahan        |
+|     `-`       | Pengurangan        |
+|     `*`       | Perkalian        |
+|     `/`       | Pembagian        |
+|     `%`       | Sisa bagi        |
+
+Berikut adalah contoh penggunaan operator aritmatika:
+
+```c
+int a = 10;
+int b = 5;
+
+// Penjumlahan
+int c = a + b;
+printf("Nilai c = %d\n", c); // Nilai c = 15
+
+// Pengurangan
+int d = a - b;
+printf("Nilai d = %d\n", d); // Nilai d = 5
+
+// Perkalian
+int e = a * b;
+printf("Nilai e = %d\n", e); // Nilai e = 50
+
+// Pembagian
+int f = a / b;
+printf("Nilai f = %d\n", f); // Nilai f = 2
+
+// Sisa bagi
+int g = a % b;
+printf("Nilai g = %d\n", g); // Nilai g = 0
+```
+
+### Operator Penugasan
+Operator penugasan digunakan untuk memberikan nilai ke variabel.
+
+Berikut adalah operator penugasan dalam bahasa C:
+|   Operator	  | Deskripsi     |
+| ------------- | ------------- |
+|     `=`   	  | Penugasan sederhana       |
+|     `+=`       | Penjumlaham        |
+|     `-=`       | Pengurangan        |
+|     `*=`       | Perkalian        |
+|     `/=`       | Pembagian        |
+|     `%=`       | Sisa bagi        |
