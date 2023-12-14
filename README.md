@@ -156,3 +156,6 @@ int main() {
 ```
 Pada contoh program di atas, fungsi scanf() digunakan untuk membaca nilai variabel a dari keyboard. Nilai variabel a kemudian ditampilkan ke layar menggunakan fungsi printf().
 Proses input dan output dapat dilakukan dengan berbagai cara, tergantung pada kebutuhan program.
+<div align="center">
+  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+</div>
