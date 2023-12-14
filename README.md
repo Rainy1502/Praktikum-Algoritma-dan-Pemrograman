@@ -28,8 +28,8 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
   <li><a href="#modul4">Modul 4 - Operator</a></li>
   <li><a href="#modul5">Modul 5 - Flow Control (Decision Making)</a></li>
   <li><a href="#modul6">Modul 6 - Flow Control (Looping)</a></li>
-  <li><a href="Modul 7 - Array">Modul 7 - Array</a></li>
-  <li><a href="Modul 8 - Fungsi dan Prosedur">Modul 8 - Fungsi dan Prosedur</a></li>
+  <li><a href="#modul7">Modul 7 - Array</a></li>
+  <li><a href="#modul8">Modul 8 - Fungsi dan Prosedur</a></li>
   <li><a href="Modul 9 - Pointer">Modul 9 - Pointer</a></li>
   <li><a href="Modul 10 - Enumerasi dan Structure">Modul 10 - Enumerasi dan Structure</a></li>
  <li><a href="Modul 11 - File Handling in C">Modul 11 - File Handling in C</a></li>
@@ -671,3 +671,208 @@ Pada contoh di atas, percabangan if pertama digunakan untuk menentukan apakah a 
 
 ---
 <h1 id="modul6">6. Flow Control (Looping)</h1>
+
+### Perulangan for
+Perulangan for digunakan untuk mengeksekusi blok kode tertentu secara berulang-ulang, dengan jumlah pengulangan yang telah ditentukan.
+
+Sintaks perulangan for:
+```C
+for (inisialisasi; kondisi; iterasi) {
+  // Blok kode yang akan dieksekusi secara berulang-ulang
+}
+```
+Bagian-bagian dari sintaksis perulangan for adalah sebagai berikut:
+- Inisialisasi: Bagian ini digunakan untuk menginisialisasi variabel yang digunakan untuk mengendalikan pengulangan.
+- Kondisi: Bagian ini digunakan untuk menentukan apakah pengulangan akan dilanjutkan atau dihentikan.
+- Iterasi: Bagian ini digunakan untuk mengubah nilai variabel yang digunakan untuk mengendalikan pengulangan.
+
+*Example :*
+```c
+// Mencetak angka dari 1 hingga 10
+for (int i = 1; i <= 10; i++) {
+  printf("%d\n", i);
+}
+```
+Pada contoh di atas, perulangan for akan dieksekusi 10 kali, dengan nilai i dimulai dari 1 dan diakhiri dengan 10.
+
+### Perulangan while
+Perulangan while digunakan untuk mengeksekusi blok kode tertentu secara berulang-ulang, selama kondisi tertentu terpenuhi.
+
+Sintaks perulangan while:
+```c
+while (kondisi) {
+  // Blok kode yang akan dieksekusi secara berulang-ulang
+}
+```
+Pada contoh di atas, perulangan while akan dieksekusi selama kondisi terpenuhi.
+Example :
+```c
+// Mencetak angka dari 1 hingga 10
+int i = 1;
+while (i <= 10) {
+  printf("%d\n", i);
+  i++;
+}
+```
+Pada contoh di atas, perulangan while akan dieksekusi selama nilai i kurang dari atau sama dengan 10.
+
+### Perulangan Do While
+Perulangan do while digunakan untuk mengeksekusi blok kode tertentu secara berulang-ulang, setidaknya satu kali, selama kondisi tertentu terpenuhi.
+
+Sintaks perulangan do while:
+```c
+do {
+  // Blok kode yang akan dieksekusi secara berulang-ulang
+} while (kondisi);
+```
+Pada contoh di atas, perulangan do while akan dieksekusi setidaknya satu kali, kemudian kondisi akan diperiksa. Jika kondisi terpenuhi, maka blok kode akan dieksekusi kembali.
+Example :
+```c
+// Mencetak angka dari 1 hingga 10
+int i = 1;
+do {
+  printf("%d\n", i);
+  i++;
+} while (i <= 10);
+```
+Pada contoh di atas, perulangan do while akan dieksekusi setidaknya satu kali, yaitu untuk mencetak angka 1. Kemudian, kondisi akan diperiksa. Jika kondisi terpenuhi, maka blok kode akan dieksekusi kembali untuk mencetak angka 2, dan seterusnya.
+
+### Perulangan Bersarang (Nested Loop)
+Perulangan bersarang adalah penggunaan perulangan di dalam perulangan lainnya.
+Example : 
+```c
+// Mencetak segitiga Pascal
+for (int i = 0; i < 10; i++) {
+  for (int j = 0; j <= i; j++) {
+    printf("%d ", (i + 1) - j);
+  }
+  printf("\n");
+}
+```
+Pada contoh di atas, perulangan luar digunakan untuk mencetak baris-baris dari segitiga Pascal. Perulangan dalam digunakan untuk mencetak angka-angka di setiap baris.
+
+Perulangan bersarang dapat digunakan untuk menyelesaikan berbagai macam masalah, seperti:
+- Mencetak pola
+- Mengurutkan data
+- Mencari data
+- Menghitung luas, volume, atau keliling suatu objek
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+</div>
+
+---
+<h1 id="modul7">7. Array</h1>
+
+### Pengertian Array
+Array adalah struktur data yang digunakan untuk menyimpan kumpulan data dengan tipe data yang sama. Array dideklarasikan dengan menggunakan tipe data dan nama array, diikuti dengan tanda kurung siku.
+
+Berikut adalah contoh deklarasi array:
+```c
+int angka[10]; // Array yang menyimpan 10 bilangan bulat
+char nama[20]; // Array yang menyimpan 20 karakter
+```
+Array dapat diakses menggunakan indeks, yaitu bilangan bulat yang menunjukkan posisi elemen array. Indeks dimulai dari 0.
+Example :
+```c
+// Mencetak angka ke-5 dari array angka
+printf("%d\n", angka[4]);
+
+// Mencetak karakter ke-10 dari array nama
+printf("%c\n", nama[9]);
+```
+
+### Penggunaan Array
+Array dapat digunakan untuk berbagai macam keperluan, seperti:
+- Menyimpan kumpulan data
+- Mengurutkan data
+- Mencari data
+- Menghitung rata-rata data
+- Menghitung total data
+
+Berikut adalah beberapa contoh penggunaan array:
+#### Menyimpan kumpulan data
+Array dapat digunakan untuk menyimpan kumpulan data, seperti nama, umur, nilai, atau hasil tes.
+Example :
+```c
+// Mendeklarasikan array nama
+char nama[10][20];
+
+// Mengisi array nama
+for (int i = 0; i < 10; i++) {
+  printf("Masukkan nama ke-%d: ", i + 1);
+  scanf("%s", nama[i]);
+}
+
+// Mencetak array nama
+for (int i = 0; i < 10; i++) {
+  printf("Nama ke-%d: %s\n", i + 1, nama[i]);
+}
+```
+
+#### Mengurutkan data
+Array dapat digunakan untuk mengurutkan data, seperti nama, umur, nilai, atau hasil tes.
+Example :
+```c
+// Mendeklarasikan array angka
+int angka[10];
+
+// Mengisi array angka
+for (int i = 0; i < 10; i++) {
+  printf("Masukkan angka ke-%d: ", i + 1);
+  scanf("%d", &angka[i]);
+}
+
+// Mengurutkan array angka
+for (int i = 0; i < 9; i++) {
+  for (int j = i + 1; j < 10; j++) {
+    if (angka[i] > angka[j]) {
+      int temp = angka[i];
+      angka[i] = angka[j];
+      angka[j] = temp;
+    }
+  }
+}
+
+// Mencetak array angka yang telah diurutkan
+for (int i = 0; i < 10; i++) {
+  printf("%d ", angka[i]);
+}
+```
+
+#### Mencari data
+Array dapat digunakan untuk mencari data, seperti nama, umur, nilai, atau hasil tes.
+Example :
+```c
+// Mendeklarasikan array nama
+char nama[10][20];
+
+// Mengisi array nama
+for (int i = 0; i < 10; i++) {
+  printf("Masukkan nama ke-%d: ", i + 1);
+  scanf("%s", nama[i]);
+}
+
+// Mencari nama "Andi" di array nama
+int indeks = -1;
+for (int i = 0; i < 10; i++) {
+  if (strcmp(nama[i], "Andi") == 0) {
+    indeks = i;
+    break;
+  }
+}
+
+// Mencetak hasil pencarian
+if (indeks == -1) {
+  printf("Nama 'Andi' tidak ditemukan.\n");
+} else {
+  printf("Nama 'Andi' ditemukan pada indeks ke-%d.\n", indeks);
+}
+```
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+</div>
+
+---
+<h1 id="modul8">8. Fungsi dan Prosedur</h1>
