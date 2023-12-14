@@ -49,14 +49,35 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
 ---
 <h1 id="modul1">Pengantar Algoritma Pemograman</h1>
 
-- **Algoritma**: Urutan langkah yang sistematis dan logis untuk memecahkan masalah atau mencapai tujuan. Algoritma memiliki enam karakteristik penting, seperti keterbatasan, kepastian, input, output, efektivitas, dan struktur.
+1. Algoritma & Pemrograman
 
-- **Pemrograman**: Sebuah proses penulisan kode untuk membuat program komputer. Pemrograman terdiri dari coding, analisis, desain, implementasi, pengujian, dan debugging. Pemrograman menggunakan bahasa dan paradigma yang berbeda, seperti imperative, functional, object-oriented, dll.
+Algoritma adalah serangkaian langkah atau instruksi yang disusun secara sistematis dan logis untuk menyelesaikan suatu masalah. Dalam pemrograman komputer, algoritma digunakan untuk menentukan alur logika program. Pemrograman adalah proses penulisan kode untuk membuat program komputer. Proses ini meliputi penyusunan algoritma, penulisan kode, dan pengujian program.
 
-- **Bahasa C**: Bahasa pemrograman untuk tujuan umum dan imperatif yang mendukung pemrograman terstruktur dan rekursif. C diciptakan oleh Dennis Ritchie pada tahun 1969-1973 di Bell Labs untuk mengembangkan sistem operasi Unix. C digunakan secara luas, portabel, fleksibel, dan berpengaruh terhadap banyak bahasa lain.
+Algoritma pemrograman dapat ditulis dalam berbagai bentuk, yaitu:
+Pseudocode: Pseudocode adalah algoritma yang ditulis dalam bahasa alami, tetapi menggunakan simbol-simbol tertentu untuk mewakili langkah-langkah algoritma.
+Prosedur: Prosedur adalah algoritma yang ditulis dalam bahasa pemrograman tertentu. <br>
 
-- **IDE**: Integrated Development Environment, sebuah software yang membantu programmer untuk menulis, menguji, dan menjalankan kode dalam satu aplikasi. IDE memiliki banyak fitur, seperti text editor, compiler, debugger, syntax highlighting, code completion, dll. Beberapa contoh IDE adalah DevC++, Visual Studio Code, CodeBlocks, dll.
+2. Pengenalan Bahasa C
+Bahasa C adalah bahasa pemrograman tingkat tinggi yang digunakan untuk berbagai macam keperluan, mulai dari sistem operasi, aplikasi, hingga perangkat keras. Bahasa C memiliki sintaks yang sederhana dan mudah dipelajari, sehingga cocok untuk pemula.
+C adalah bahasa pemrograman tingkat menengah yang dikembangkan pertama kali oleh Dennis Ritchie pada awal tahun 1970-an. Bahasa C memiliki sintaks yang relatif sederhana dan memberikan kontrol yang tinggi terhadap perangkat keras komputer.
 
-<div align="center">
+3. IDE & Instalasi
+
+IDE (Integrated Development Environment) adalah perangkat lunak yang digunakan untuk menulis, mengedit, dan mengompilasi kode program. IDE dapat memudahkan programmer dalam menulis program, karena menyediakan berbagai macam fitur yang mendukung proses pemrograman, antara lain:
+
+Editor: Editor untuk menulis kode program.
+Kompiler: Kompiler untuk mengompilasi kode sumber menjadi kode mesin.
+Debugger: Debugger untuk memeriksa kesalahan dalam program.
+Linters: Linter untuk memeriksa kode program untuk potensi kesalahan.
+
+Contoh IDE
+
+Ada banyak IDE yang tersedia untuk bahasa C, antara lain:
+
+Dev-C++: IDE gratis dan open source yang populer untuk bahasa C.
+Code::Blocks: IDE gratis dan open source yang juga populer untuk bahasa C.
+Visual Studio: IDE berbayar yang dikembangkan oleh Microsoft.
+Xcode: IDE berbayar yang dikembangkan oleh Apple.
+
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
 </div>
