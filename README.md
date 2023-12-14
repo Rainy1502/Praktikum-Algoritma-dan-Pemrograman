@@ -23,7 +23,7 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
 <h2 id="navigator">Modul</h2>
 <list>
   <li><a href="#modul1">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
-  <li><a href="Modul 2 - Pemrograman Dasar C">Modul 2 - Pemrograman Dasar C</a></li>
+  <li><a href="#modul2>Modul 2 - Pemrograman Dasar C</a></li>
   <li><a href="Modul 3 - Variabel, Konstanta dan Tipe Data">Modul 3 - Variabel, Konstanta dan Tipe Data</a></li>
   <li><a href="Modul 4 - Operator">Modul 4 - Operator</a></li>
   <li><a href="Modul 5 - Flow Control (Decision Making)">Modul 5 - Flow Control (Decision Making)</a></li>
@@ -68,5 +68,71 @@ Code::Blocks: IDE gratis dan open source yang juga populer untuk bahasa C.
 Visual Studio: IDE berbayar yang dikembangkan oleh Microsoft.
 Xcode: IDE berbayar yang dikembangkan oleh Apple.
 
+<div align="center">
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
 </div>
+
+<h1 id="modul2">Pemrograman Dasar C</h1>
+
+truktur dasar program C terdiri dari tiga bagian utama, yaitu:
+
+Judul program: Bagian ini berisi nama program dan keterangan singkat tentang program.
+Header file: Bagian ini berisi deklarasi fungsi-fungsi yang akan digunakan dalam program.
+Deklarasi: Bagian ini berisi deklarasi variabel, konstanta, dan tipe data yang akan digunakan dalam program.
+Deskripsi: Bagian ini berisi inti program, yaitu langkah-langkah penyelesaian masalah.
+Judul program ditulis dalam bentuk komentar. Komentar dalam C dimulai dengan tanda pagar (#) diikuti dengan teks komentar.
+
+Header file ditulis dengan menggunakan preprocessor directive #include. Preprocessor directive adalah bagian dari kode program yang akan dieksekusi oleh preprocessor sebelum kode program dijalankan.
+
+Deklarasi ditulis dengan menggunakan keyword int, char, float, double, atau struct.
+
+Deskripsi ditulis dengan menggunakan blok kode yang diawali dengan tanda kurung kurawal buka { dan diakhiri dengan tanda kurung kurawal tutup }.
+
+Berikut adalah contoh struktur dasar program C:
+
+/* Program Hello World */
+
+#include <stdio.h>
+
+```
+int main() {
+  /* Deklarasi variabel */
+  int a = 10;
+  char b = 'A';
+
+  /* Deskripsi */
+  printf("Nilai a = %d\n", a);
+  printf("Nilai b = %c\n", b);
+
+  return 0;
+}
+```
+Pada contoh program di atas, struktur dasar program C terdiri dari:
+
+Judul program: "Program Hello World"
+Header file: <stdio.h>
+Deklarasi:
+Variabel a dengan tipe data int
+Variabel b dengan tipe data char
+Deskripsi:
+Mencetak nilai variabel a ke layar
+Mencetak nilai variabel b ke layar
+Proses Input & Output
+
+Proses input dan output adalah salah satu proses penting dalam pemrograman. Proses input digunakan untuk memasukkan data dari luar program, sedangkan proses output digunakan untuk menampilkan data ke luar program.
+
+Dalam bahasa C, proses input dan output dapat dilakukan dengan menggunakan fungsi-fungsi standar yang tersedia dalam header file stdio.h.
+
+Fungsi input
+
+Berikut adalah beberapa fungsi input yang tersedia dalam header file stdio.h:
+
+scanf(): Fungsi untuk membaca data dari keyboard.
+getchar(): Fungsi untuk membaca satu karakter dari keyboard.
+Fungsi output
+
+Berikut adalah beberapa fungsi output yang tersedia dalam header file stdio.h:
+
+printf(): Fungsi untuk menampilkan teks ke layar.
+putchar(): Fungsi untuk menampilkan satu karakter ke layar.
+Berikut adalah contoh penggunaan fungsi input dan output:
