@@ -348,3 +348,192 @@ Berikut adalah operator penugasan dalam bahasa C:
 |     `*=`       | Perkalian        |
 |     `/=`       | Pembagian        |
 |     `%=`       | Sisa bagi        |
+
+Berikut adalah contoh penggunaan operator penugasan:
+```C
+int a = 10;
+
+// Penugasan sederhana
+a = 5;
+printf("Nilai a = %d\n", a); // Nilai a = 5
+
+// Penambahan
+a += 5;
+printf("Nilai a = %d\n", a); // Nilai a = 10
+
+// Pengurangan
+a -= 5;
+printf("Nilai a = %d\n", a); // Nilai a = 5
+
+// Perkalian
+a *= 5;
+printf("Nilai a = %d\n", a); // Nilai a = 25
+
+// Pembagian
+a /= 5;
+printf("Nilai a = %d\n", a); // Nilai a = 5
+
+// Sisa bagi
+a %= 5;
+printf("Nilai a = %d\n", a); // Nilai a = 0
+```
+
+### Operator Pembanding
+Operator pembanding digunakan untuk membandingkan nilai dua variabel.
+
+Berikut adalah operator pembanding dalam bahasa C:
+|   Operator	  | Deskripsi     |
+| ------------- | ------------- |
+|     `==`   	  | Sama dengan       |
+|     `!=`       | Tidak sama dengan  |
+|     `>`       | Lebih besar dari  |
+|     `<`       | Lebih kecil dari    |
+|     `>=`       | Lebih besar dari atau sama dengan |
+|     `<=`       | Lebih kecil dari atau sama dengan |
+
+Berikut adalah contoh penggunaan operator pembanding:
+```c
+int a = 10;
+int b = 5;
+
+// Sama dengan
+int c = (a == b);
+printf("Nilai c = %d\n", c); // Nilai c = 0
+
+// Tidak sama dengan
+int d = (a != b);
+printf("Nilai d = %d\n", d); // Nilai d = 1
+
+// Lebih besar dari
+int e = (a > b);
+printf("Nilai e = %d\n", e); // Nilai e = 1
+
+// Lebih kecil dari
+int f = (a < b);
+printf("Nilai f = %d\n", f); // Nilai f = 0
+
+// Lebih besar dari atau sama dengan
+int g = (a >= b);
+printf("Nilai g = %d\n", g); // Nilai g = 1
+
+// Lebih kecil dari atau sama dengan
+int h = (a <= b);
+printf("Nilai h = %d\n", h); // Nilai h = 0
+```
+
+### Operator Logika
+Operator logika digunakan untuk menggabungkan hasil dari dua atau lebih operator pembanding.
+
+Berikut adalah operator logika dalam bahasa C:
+|   Operator	  | Deskripsi     |
+| ------------- | ------------- |
+|     `&&`   	  | AND    |
+|     `       | ` |
+|     `!`       | NOT  |
+
+Berikut adalah contoh penggunaan operator logika:
+```c
+int a = 10;
+int b = 5;
+
+// AND
+int c = (a > b) && (a < 15);
+printf("Nilai c = %d\n", c); // Nilai c = 1
+
+// OR
+int d = (a > b) || (a < 15);
+printf("Nilai d = %d\n", d); // Nilai d = 1
+
+// NOT
+int e = !(a > b);
+printf("Nilai e = %d\n", e); // Nilai e = 1
+```
+
+### Operator Bitwise
+Operator bitwise digunakan untuk memanipulasi bit-bit dari suatu variabel.
+
+Berikut adalah operator bitwise dalam bahasa C:
+|   Operator	  | Deskripsi     |
+| ------------- | ------------- |
+|     `&`   	  | AND       |
+|     `      | `  |
+|     `^`       | XOR  |
+|     `~`       | NOT    |
+|     `<<`       | Shift Kiri |
+|     `>>`       | Shift kanan |
+
+Berikut adalah contoh penggunaan operator bitwise:
+```c
+int a = 10; // 00001010
+int b = 5; // 00000101
+
+// AND
+int c = a & b; // 00000100
+printf("Nilai c = %d\n", c); // Nilai c = 4
+
+// OR
+int d = a | b; // 00001111
+printf("Nilai d = %d\n", d); // Nilai d = 15
+
+// XOR
+int e = a ^ b; // 00001011
+printf("Nilai e = %d\n", e); // Nilai e = 11
+
+// NOT
+int f = ~a; // 11110101
+printf("Nilai f = %d\n", f); // Nilai f = -11
+
+// Shift kiri
+int g = a << 2; // 00101000
+printf("Nilai g = %d\n", g); // Nilai g = 40
+
+// Shift kanan
+int h = a >> 2; // 00000101
+printf("Nilai h = %d\n", h); // Nilai h = 5
+```
+
+### Operator Kondisional
+
+Operator kondisional digunakan untuk memilih blok kode yang akan dieksekusi berdasarkan kondisi tertentu.
+
+Operator kondisional dalam bahasa C adalah `if-else`.
+
+Berikut adalah sintaks operator `if-else`:
+```c
+if (kondisi) {
+  // Blok kode jika kondisi terpenuhi
+} else {
+  // Blok kode jika kondisi tidak terpenuhi
+}
+```
+Berikut adalah contoh penggunaan operator `if-else`:
+```c
+int a = 10;
+int b = 5;
+
+// Menentukan apakah a lebih besar dari b
+if (a > b) {
+  printf("a lebih besar dari b\n");
+} else {
+  printf("b lebih besar dari a atau a sama dengan b\n");
+}
+```
+
+Operator kondisional `if-else` dapat digunakan secara bersarang, yaitu dengan menggunakan operator `if-else` di dalam blok kode `if-else` lainnya.
+
+Berikut adalah contoh penggunaan operator `if-else` bersarang:
+```c
+int a = 10;
+int b = 5;
+
+// Menentukan apakah a lebih besar dari b, jika ya, tentukan apakah a lebih besar dari 15
+if (a > b) {
+  if (a > 15) {
+    printf("a lebih besar dari b dan lebih besar dari 15\n");
+  } else {
+    printf("a lebih besar dari b, tetapi tidak lebih besar dari 15\n");
+  }
+} else {
+  printf("b lebih besar dari a atau a sama dengan b\n");
+}
+```
