@@ -1,11 +1,11 @@
 # Praktikum Algoritma dan Pemrograman
-👨‍🎓 Nama : Fattan Naufan islami <br>
-📇 Nomor Induk Mahasiswa : 23343032 <br>
-📚 Jurusan : Informatika <br>
-🏫 Universitas : Universitas Negeri Padang <br>
-🧑‍🏫️ Dosen : Randi Proska Sandra, M.Sc <br>
-📋 Kode Kelas : INF1.62.1008 <br>
-📑 Semester : 1 <br>
+`👨‍🎓 Nama : Fattan Naufan islami` <br> 
+`📇 Nomor Induk Mahasiswa : 23343032` <br>
+`📚 Jurusan : Informatika` <br>
+`🏫 Universitas : Universitas Negeri Padang` <br>
+`🧑‍🏫️ Dosen : Randi Proska Sandra, M.Sc` <br>
+`📋 Kode Kelas : INF1.62.1008` <br>
+`📑 Semester : 1` <br>
 
 Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kuliah ini mahasiswa mempelajari tentang prinsip, konsep dan metode dalam menyelesaikan masalah komputasi yang akan digunakan dalam pembuatan suatu aplikasi sederhana. Mahasiswa mempelajari konsep dasar komputer dan sistem komputer, penulisan algoritma program, tipe data, pengenal, operator, struktur program, pemrograman modular, fungsi dan prosedur serta pencarian dan pengurutan data.
 
