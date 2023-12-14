@@ -11,7 +11,7 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
 
 ## Modul
 <list>
-  <li><a href="Modul 1 - Pengantar Algoritma dan Pemrograman">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
+  <li><a href="#modul1">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
   <li><a href="Modul 2 - Pemrograman Dasar C">Modul 2 - Pemrograman Dasar C</a></li>
   <li><a href="Modul 3 - Variabel, Konstanta dan Tipe Data">Modul 3 - Variabel, Konstanta dan Tipe Data</a></li>
   <li><a href="Modul 4 - Operator">Modul 4 - Operator</a></li>
@@ -23,3 +23,18 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
   <li><a href="Modul 10 - Enumerasi dan Structure">Modul 10 - Enumerasi dan Structure</a></li>
  <li><a href="Modul 11 - File Handling in C">Modul 11 - File Handling in C</a></li>
 </list>
+
+---
+<h1 id="modul1">Pengantar Algoritma Pemograman</h1>
+
+- **Algoritma**: Urutan langkah yang sistematis dan logis untuk memecahkan masalah atau mencapai tujuan. Algoritma memiliki enam karakteristik penting, seperti keterbatasan, kepastian, input, output, efektivitas, dan struktur.
+
+- **Pemrograman**: Sebuah proses penulisan kode untuk membuat program komputer. Pemrograman terdiri dari coding, analisis, desain, implementasi, pengujian, dan debugging. Pemrograman menggunakan bahasa dan paradigma yang berbeda, seperti imperative, functional, object-oriented, dll.
+
+- **Bahasa C**: Bahasa pemrograman untuk tujuan umum dan imperatif yang mendukung pemrograman terstruktur dan rekursif. C diciptakan oleh Dennis Ritchie pada tahun 1969-1973 di Bell Labs untuk mengembangkan sistem operasi Unix. C digunakan secara luas, portabel, fleksibel, dan berpengaruh terhadap banyak bahasa lain.
+
+- **IDE**: Integrated Development Environment, sebuah software yang membantu programmer untuk menulis, menguji, dan menjalankan kode dalam satu aplikasi. IDE memiliki banyak fitur, seperti text editor, compiler, debugger, syntax highlighting, code completion, dll. Beberapa contoh IDE adalah DevC++, Visual Studio Code, CodeBlocks, dll.
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+</div>
