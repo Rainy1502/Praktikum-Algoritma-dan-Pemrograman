@@ -25,7 +25,7 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
   <li><a href="#modul1">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
   <li><a href="#modul2">Modul 2 - Pemrograman Dasar C</a></li>
   <li><a href="#modul3">Modul 3 - Variabel, Konstanta dan Tipe Data</a></li>
-  <li><a href="Modul 4 - Operator">Modul 4 - Operator</a></li>
+  <li><a href="#modul4">Modul 4 - Operator</a></li>
   <li><a href="Modul 5 - Flow Control (Decision Making)">Modul 5 - Flow Control (Decision Making)</a></li>
   <li><a href="Modul 6 - Flow Control (Looping)">Modul 6 - Flow Control (Looping)</a></li>
   <li><a href="Modul 7 - Array">Modul 7 - Array</a></li>
@@ -71,6 +71,7 @@ Ada banyak IDE yang tersedia untuk bahasa C, antara lain:
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
 </div>
 
+---
 <h1 id="modul2">2. Pemrograman Dasar C</h1>
 
 ### Struktur dasar program C terdiri dari tiga bagian utama, yaitu:
@@ -160,6 +161,7 @@ Proses input dan output dapat dilakukan dengan berbagai cara, tergantung pada ke
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
 </div>
 
+---
 <h1 id="modul3">3. Variabel, Konstanta dan Tipe Data</h1>
 
 ### Variabel & Konstanta
@@ -286,8 +288,11 @@ Berikut adalah beberapa contoh keywords dalam bahasa C:
 - `scanf()`
 - `if()`
 - `else()`
+
 Keywords tidak dapat digunakan sebagai nama variabel
 <div align="center">
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
 </div>
 
+---
+<h1 id="modul4">4. Operator</h1>
