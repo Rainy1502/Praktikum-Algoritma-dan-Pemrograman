@@ -24,7 +24,7 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
 <list>
   <li><a href="#modul1">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
   <li><a href="#modul2">Modul 2 - Pemrograman Dasar C</a></li>
-  <li><a href="Modul 3 - Variabel, Konstanta dan Tipe Data">Modul 3 - Variabel, Konstanta dan Tipe Data</a></li>
+  <li><a href="#modul3">Modul 3 - Variabel, Konstanta dan Tipe Data</a></li>
   <li><a href="Modul 4 - Operator">Modul 4 - Operator</a></li>
   <li><a href="Modul 5 - Flow Control (Decision Making)">Modul 5 - Flow Control (Decision Making)</a></li>
   <li><a href="Modul 6 - Flow Control (Looping)">Modul 6 - Flow Control (Looping)</a></li>
@@ -89,7 +89,7 @@ Deskripsi ditulis dengan menggunakan blok kode yang diawali dengan tanda kurung 
 
 *Example :*
 
-```
+```c
 /* Program Hello World */
 
 #include <stdio.h>
@@ -126,18 +126,18 @@ Dalam bahasa C, proses input dan output dapat dilakukan dengan menggunakan fungs
 ### Fungsi input
 
 Berikut adalah beberapa fungsi input yang tersedia dalam header file stdio.h:
-- scanf(): Fungsi untuk membaca data dari keyboard.
-- getchar(): Fungsi untuk membaca satu karakter dari keyboard.
+- `scanf()`: Fungsi untuk membaca data dari keyboard.
+- `getchar()`: Fungsi untuk membaca satu karakter dari keyboard.
 
 ### Fungsi output
 
 Berikut adalah beberapa fungsi output yang tersedia dalam header file `stdio.h`:
-- printf(): Fungsi untuk menampilkan teks ke layar.
-- putchar(): Fungsi untuk menampilkan satu karakter ke layar.
+- `printf()`: Fungsi untuk menampilkan teks ke layar.
+- `putchar()`: Fungsi untuk menampilkan satu karakter ke layar.
 
 *Example :*
 
-```
+```c
 /* Program input dan output */
 
 #include <stdio.h>
@@ -154,8 +154,140 @@ int main() {
   return 0;
 }
 ```
-Pada contoh program di atas, fungsi scanf() digunakan untuk membaca nilai variabel a dari keyboard. Nilai variabel a kemudian ditampilkan ke layar menggunakan fungsi printf().
+Pada contoh program di atas, fungsi `scanf()` digunakan untuk membaca nilai variabel `a` dari keyboard. Nilai variabel `a` kemudian ditampilkan ke layar menggunakan fungsi `printf()`.
 Proses input dan output dapat dilakukan dengan berbagai cara, tergantung pada kebutuhan program.
 <div align="center">
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
 </div>
+
+<h1 id="modul3">3. Variabel, Konstanta dan Tipe Data</h1>
+
+### Variabel & Konstanta
+- Variabel adalah tempat penyimpanan data dalam memori komputer. Variabel dapat digunakan untuk menyimpan berbagai macam data, seperti angka, huruf, karakter, atau bilangan kompleks.
+
+- Konstanta adalah nilai yang tidak dapat diubah selama program berjalan. Konstanta biasanya digunakan untuk menyimpan nilai-nilai yang tidak berubah, seperti konstanta fisika atau konstanta matematika.
+
+### Deklarasi Variabel
+Variabel dideklarasikan dengan menggunakan keyword 
+- `int` 
+- `char` 
+- `float` 
+- `double`  
+- `struct`
+
+Berikut adalah contoh deklarasi variabel:
+
+```c
+int a; // variabel integer
+char b; // variabel karakter
+float c; // variabel floating-point
+double d; // variabel double-precision floating-point
+struct s { // variabel struktur
+  int x;
+  char y;
+};
+```
+
+### Akses Variabel
+Nilai variabel dapat diakses dengan menggunakan operator `.` atau `->`.
+
+Operator `.` digunakan untuk mengakses anggota variabel struktur.
+
+Operator `->` digunakan untuk mengakses anggota variabel struktur secara langsung.
+
+Berikut adalah contoh akses variabel:
+
+```c
+int a = 10;
+char b = 'A';
+float c = 3.14;
+double d = 2.71828;
+struct s s = {1, 'B'};
+
+// Akses variabel a
+printf("Nilai a = %d\n", a);
+
+// Akses variabel b
+printf("Nilai b = %c\n", b);
+
+// Akses variabel c
+printf("Nilai c = %f\n", c);
+
+// Akses variabel d
+printf("Nilai d = %lf\n", d);
+
+// Akses anggota variabel s
+printf("Nilai s.x = %d\n", s.x);
+printf("Nilai s.y = %c\n", s.y);
+```
+
+### Nilai Awal Variabel
+Nilai awal variabel dapat ditentukan saat deklarasi variabel.
+
+Berikut adalah contoh nilai awal variabel:
+```c
+int a = 10; // nilai awal variabel a = 10
+char b = 'A'; // nilai awal variabel b = 'A'
+float c = 3.14; // nilai awal variabel c = 3.14
+double d = 2.71828; // nilai awal variabel d = 2.71828
+```
+
+## Tipe Data Fundamental
+Bahasa C memiliki beberapa tipe data fundamental, yaitu:
+
+- `int`: Tipe data integer untuk menyimpan bilangan bulat.
+- `char`: Tipe data karakter untuk menyimpan satu karakter.
+- `float`: Tipe data floating-point untuk menyimpan bilangan desimal.
+- `double`: Tipe data double-precision floating-point untuk menyimpan bilangan desimal dengan presisi yang lebih tinggi dari tipe data `float`.
+
+Berikut adalah tabel ukuran memori untuk tipe data fundamental:
+
+|   Tipe Data	  | Ukuran Memori |
+| ------------- | ------------- |
+|     `int` 	  | 4 Byte        |
+|     `char`    | 1 Byte        |
+|     `float`   | 4 Byte        |
+|     `double`  | 8 byte        |
+
+## Type Casting
+Type casting adalah konversi tipe data dari satu tipe data ke tipe data lainnya.
+
+Type casting dapat dilakukan dengan menggunakan operator `()`.
+
+Berikut adalah contoh type casting:
+```c
+int a = 10;
+float b = 3.14;
+
+// Type casting dari int ke float
+float c = (float)a;
+
+// Type casting dari float ke int
+int d = (int)b;
+
+// Type casting dari char ke int
+int e = (int)'A';
+
+printf("Nilai c = %f\n", c);
+printf("Nilai d = %d\n", d);
+printf("Nilai e = %d\n", e);
+```
+
+## Keywords
+Keywords adalah kata kunci yang memiliki arti khusus dalam bahasa pemrograman.
+
+Berikut adalah beberapa contoh keywords dalam bahasa C:
+- `int`
+- `char`
+- `float`
+- `double`
+- `main()`
+- `printf()`
+- `scanf()`
+- `if()`
+- `else()`
+Keywords tidak dapat digunakan sebagai nama variabel
+<div align="center">
+  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+</div>
+
