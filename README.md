@@ -23,5 +23,3 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
   <li><a href="Modul 10 - Enumerasi dan Structure">Modul 10 - Enumerasi dan Structure</a></li>
  <li><a href="Modul 11 - File Handling in C">Modul 11 - File Handling in C</a></li>
 </list>
-
-Izin Comot @Nyot-Nyot :V 
