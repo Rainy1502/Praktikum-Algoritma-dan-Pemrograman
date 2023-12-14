@@ -9,7 +9,7 @@
 
 Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kuliah ini mahasiswa mempelajari tentang prinsip, konsep dan metode dalam menyelesaikan masalah komputasi yang akan digunakan dalam pembuatan suatu aplikasi sederhana. Mahasiswa mempelajari konsep dasar komputer dan sistem komputer, penulisan algoritma program, tipe data, pengenal, operator, struktur program, pemrograman modular, fungsi dan prosedur serta pencarian dan pengurutan data.
 
-## Modul
+<h2 id="navigator">Modul</h2>
 <list>
   <li><a href="#modul1">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
   <li><a href="Modul 2 - Pemrograman Dasar C">Modul 2 - Pemrograman Dasar C</a></li>
