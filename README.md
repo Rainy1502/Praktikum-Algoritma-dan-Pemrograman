@@ -23,7 +23,7 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
 <h2 id="navigator">Modul</h2>
 <list>
   <li><a href="#modul1">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
-  <li><a href="#modul2>Modul 2 - Pemrograman Dasar C</a></li>
+  <li><a href="#modul2">Modul 2 - Pemrograman Dasar C</a></li>
   <li><a href="Modul 3 - Variabel, Konstanta dan Tipe Data">Modul 3 - Variabel, Konstanta dan Tipe Data</a></li>
   <li><a href="Modul 4 - Operator">Modul 4 - Operator</a></li>
   <li><a href="Modul 5 - Flow Control (Decision Making)">Modul 5 - Flow Control (Decision Making)</a></li>
@@ -38,35 +38,34 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
 ---
 <h1 id="modul1">Pengantar Algoritma Pemograman</h1>
 
-1. Algoritma & Pemrograman
+### Algoritma & Pemrograman
 
-Algoritma adalah serangkaian langkah atau instruksi yang disusun secara sistematis dan logis untuk menyelesaikan suatu masalah. Dalam pemrograman komputer, algoritma digunakan untuk menentukan alur logika program. Pemrograman adalah proses penulisan kode untuk membuat program komputer. Proses ini meliputi penyusunan algoritma, penulisan kode, dan pengujian program.
+- Algoritma adalah serangkaian langkah atau instruksi yang disusun secara sistematis dan logis untuk menyelesaikan suatu masalah. Dalam pemrograman komputer, algoritma digunakan untuk menentukan alur logika program.
+- Pemrograman adalah proses penulisan kode untuk membuat program komputer. Proses ini meliputi penyusunan algoritma, penulisan kode, dan pengujian program.
 
 Algoritma pemrograman dapat ditulis dalam berbagai bentuk, yaitu:
-Pseudocode: Pseudocode adalah algoritma yang ditulis dalam bahasa alami, tetapi menggunakan simbol-simbol tertentu untuk mewakili langkah-langkah algoritma.
-Prosedur: Prosedur adalah algoritma yang ditulis dalam bahasa pemrograman tertentu. <br>
+- Pseudocode: Pseudocode adalah algoritma yang ditulis dalam bahasa alami, tetapi menggunakan simbol-simbol tertentu untuk mewakili langkah-langkah algoritma.
+- Prosedur: Prosedur adalah algoritma yang ditulis dalam bahasa pemrograman tertentu. <br>
 
-2. Pengenalan Bahasa C
-Bahasa C adalah bahasa pemrograman tingkat tinggi yang digunakan untuk berbagai macam keperluan, mulai dari sistem operasi, aplikasi, hingga perangkat keras. Bahasa C memiliki sintaks yang sederhana dan mudah dipelajari, sehingga cocok untuk pemula.
-C adalah bahasa pemrograman tingkat menengah yang dikembangkan pertama kali oleh Dennis Ritchie pada awal tahun 1970-an. Bahasa C memiliki sintaks yang relatif sederhana dan memberikan kontrol yang tinggi terhadap perangkat keras komputer.
+### Pengenalan Bahasa C
+- Bahasa C adalah bahasa pemrograman tingkat tinggi yang digunakan untuk berbagai macam keperluan, mulai dari sistem operasi, aplikasi, hingga perangkat keras. Bahasa C memiliki sintaks yang sederhana dan mudah dipelajari, sehingga cocok untuk pemula.
+- C adalah bahasa pemrograman tingkat menengah yang dikembangkan pertama kali oleh Dennis Ritchie pada awal tahun 1970-an. Bahasa C memiliki sintaks yang relatif sederhana dan memberikan kontrol yang tinggi terhadap perangkat keras komputer.
 
-3. IDE & Instalasi
+### IDE & Instalasi
 
 IDE (Integrated Development Environment) adalah perangkat lunak yang digunakan untuk menulis, mengedit, dan mengompilasi kode program. IDE dapat memudahkan programmer dalam menulis program, karena menyediakan berbagai macam fitur yang mendukung proses pemrograman, antara lain:
 
-Editor: Editor untuk menulis kode program.
-Kompiler: Kompiler untuk mengompilasi kode sumber menjadi kode mesin.
-Debugger: Debugger untuk memeriksa kesalahan dalam program.
-Linters: Linter untuk memeriksa kode program untuk potensi kesalahan.
+- Editor: Editor untuk menulis kode program.
+- Kompiler: Kompiler untuk mengompilasi kode sumber menjadi kode mesin.
+- Debugger: Debugger untuk memeriksa kesalahan dalam program.
+- Linters: Linter untuk memeriksa kode program untuk potensi kesalahan.
 
-Contoh IDE
-
+### Contoh IDE
 Ada banyak IDE yang tersedia untuk bahasa C, antara lain:
-
-Dev-C++: IDE gratis dan open source yang populer untuk bahasa C.
-Code::Blocks: IDE gratis dan open source yang juga populer untuk bahasa C.
-Visual Studio: IDE berbayar yang dikembangkan oleh Microsoft.
-Xcode: IDE berbayar yang dikembangkan oleh Apple.
+- Dev-C++: IDE gratis dan open source yang populer untuk bahasa C.
+- Code::Blocks: IDE gratis dan open source yang juga populer untuk bahasa C.
+- Visual Studio: IDE berbayar yang dikembangkan oleh Microsoft.
+- Xcode: IDE berbayar yang dikembangkan oleh Apple.
 
 <div align="center">
   <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
@@ -74,7 +73,7 @@ Xcode: IDE berbayar yang dikembangkan oleh Apple.
 
 <h1 id="modul2">Pemrograman Dasar C</h1>
 
-truktur dasar program C terdiri dari tiga bagian utama, yaitu:
+Struktur dasar program C terdiri dari tiga bagian utama, yaitu:
 
 Judul program: Bagian ini berisi nama program dan keterangan singkat tentang program.
 Header file: Bagian ini berisi deklarasi fungsi-fungsi yang akan digunakan dalam program.
@@ -90,11 +89,11 @@ Deskripsi ditulis dengan menggunakan blok kode yang diawali dengan tanda kurung 
 
 Berikut adalah contoh struktur dasar program C:
 
+```
 /* Program Hello World */
 
 #include <stdio.h>
 
-```
 int main() {
   /* Deklarasi variabel */
   int a = 10;
@@ -136,3 +135,23 @@ Berikut adalah beberapa fungsi output yang tersedia dalam header file stdio.h:
 printf(): Fungsi untuk menampilkan teks ke layar.
 putchar(): Fungsi untuk menampilkan satu karakter ke layar.
 Berikut adalah contoh penggunaan fungsi input dan output:
+
+```
+/* Program input dan output */
+
+#include <stdio.h>
+
+int main() {
+  /* Input */
+  int a;
+  printf("Masukkan nilai a: ");
+  scanf("%d", &a);
+
+  /* Output */
+  printf("Nilai a = %d\n", a);
+
+  return 0;
+}
+```
+Pada contoh program di atas, fungsi scanf() digunakan untuk membaca nilai variabel a dari keyboard. Nilai variabel a kemudian ditampilkan ke layar menggunakan fungsi printf().
+Proses input dan output dapat dilakukan dengan berbagai cara, tergantung pada kebutuhan program.
