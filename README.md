@@ -26,8 +26,8 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
   <li><a href="#modul2">Modul 2 - Pemrograman Dasar C</a></li>
   <li><a href="#modul3">Modul 3 - Variabel, Konstanta dan Tipe Data</a></li>
   <li><a href="#modul4">Modul 4 - Operator</a></li>
-  <li><a href="Modul 5 - Flow Control (Decision Making)">Modul 5 - Flow Control (Decision Making)</a></li>
-  <li><a href="Modul 6 - Flow Control (Looping)">Modul 6 - Flow Control (Looping)</a></li>
+  <li><a href="#modul5">Modul 5 - Flow Control (Decision Making)</a></li>
+  <li><a href="#modul6">Modul 6 - Flow Control (Looping)</a></li>
   <li><a href="Modul 7 - Array">Modul 7 - Array</a></li>
   <li><a href="Modul 8 - Fungsi dan Prosedur">Modul 8 - Fungsi dan Prosedur</a></li>
   <li><a href="Modul 9 - Pointer">Modul 9 - Pointer</a></li>
@@ -537,3 +537,137 @@ if (a > b) {
   printf("b lebih besar dari a atau a sama dengan b\n");
 }
 ```
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+</div>
+
+---
+<h1 id="modul5">5. Flow Control (Decision Making)</h1>
+
+### If
+Pernyataan if digunakan untuk mengeksekusi blok kode jika kondisi tertentu terpenuhi.
+
+Sintaks pernyataan if:
+```c
+if (kondisi) {
+  // Blok kode yang akan dieksekusi jika kondisi terpenuhi
+}
+```
+Example :
+```c
+int a = 10;
+int b = 5;
+
+// Menentukan apakah a lebih besar dari b
+if (a > b) {
+  printf("a lebih besar dari b\n");
+}
+```
+
+### If Else
+Pernyataan if else digunakan untuk mengeksekusi blok kode jika kondisi tertentu terpenuhi, atau blok kode yang berbeda jika kondisi tidak terpenuhi.
+
+Sintaks pernyataan if else:
+```c
+if (kondisi) {
+  // Blok kode yang akan dieksekusi jika kondisi terpenuhi
+} else {
+  // Blok kode yang akan dieksekusi jika kondisi tidak terpenuhi
+}
+```
+Example :
+```c
+int a = 10;
+int b = 5;
+
+// Menentukan apakah a lebih besar dari b
+if (a > b) {
+  printf("a lebih besar dari b\n");
+} else {
+  printf("b lebih besar dari a atau a sama dengan b\n");
+}
+```
+
+### Switch Case
+Pernyataan switch case digunakan untuk mengeksekusi blok kode berdasarkan nilai suatu variabel.
+
+Sintaks pernyataan switch case:
+```c
+switch (variabel) {
+  case nilai1:
+    // Blok kode yang akan dieksekusi jika variabel bernilai nilai1
+    break;
+  case nilai2:
+    // Blok kode yang akan dieksekusi jika variabel bernilai nilai2
+    break;
+  // ...
+  default:
+    // Blok kode yang akan dieksekusi jika variabel tidak memiliki nilai yang cocok
+    break;
+}
+```
+Example :
+```c
+int a = 10;
+
+// Menentukan nilai a
+switch (a) {
+  case 1:
+    printf("a bernilai 1\n");
+    break;
+  case 2:
+    printf("a bernilai 2\n");
+    break;
+  case 3:
+    printf("a bernilai 3\n");
+    break;
+  default:
+    printf("a tidak memiliki nilai yang cocok\n");
+    break;
+}
+```
+### Operator Ternary
+Operator ternary digunakan untuk mengeksekusi blok kode berdasarkan kondisi tertentu.
+
+Sintaks operator ternary:
+```c
+ekspresi ? nilai_jika_benar : nilai_jika_salah;
+```
+Example :
+```c
+int a = 10;
+int b = 5;
+
+// Menentukan apakah a lebih besar dari b
+int hasil = (a > b) ? 1 : 0;
+
+printf("a lebih besar dari b: %d\n", hasil);
+```
+### Percabangan Bersarang (Nested)
+Percabangan bersarang adalah penggunaan percabangan di dalam percabangan lainnya.
+
+Example :
+```c
+int a = 10;
+int b = 5;
+
+// Menentukan apakah a lebih besar dari b, jika ya, tentukan apakah a lebih besar dari 15
+if (a > b) {
+  if (a > 15) {
+    printf("a lebih besar dari b dan lebih besar dari 15\n");
+  } else {
+    printf("a lebih besar dari b, tetapi tidak lebih besar dari 15\n");
+  }
+} else {
+  printf("b lebih besar dari a atau a sama dengan b\n");
+}
+```
+Pada contoh di atas, percabangan if pertama digunakan untuk menentukan apakah a lebih besar dari b. Jika ya, maka percabangan if kedua akan dieksekusi. Percabangan if kedua digunakan untuk menentukan apakah a lebih besar dari 15.
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+</div>
+
+---
+<h1 id="modul6">6. Flow Control (Looping)</h1>
