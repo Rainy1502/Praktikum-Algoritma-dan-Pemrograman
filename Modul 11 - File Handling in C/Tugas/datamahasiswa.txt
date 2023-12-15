@@ -1,12 +1,30 @@
 Data Mahasiswa ke-1
 Nama: Fattan Naufan Islami
 NIM: 23343037
-Jurusan: Elektronika
-Program Studi: Informatika
+Jurusan: Teknik
+Program Studi: Teknik Informatika
 
 Data Mahasiswa ke-2
 Nama: Dzaki Sultan Rabbani
 NIM: 23343035
-Jurusan: Elektronika
-Program Studi: Informatika
+Jurusan: Teknik
+Program Studi: Teknik Informatika
+
+Data Mahasiswa ke-3
+Nama: Dolly Anggara
+NIM: 23343034
+Jurusan: Teknik
+Program Studi: Teknik Informatika
+
+Data Mahasiswa ke-4
+Nama: Hasanul Fikri
+NIM: 233430340
+Jurusan: Teknik
+Program Studi: Teknik Informatika
+
+Data Mahasiswa ke-5
+Nama: Faza Azka Mahasya
+NIM: 23343038
+Jurusan: Teknik
+Program Studi: Teknik Informatika
 
