@@ -31,8 +31,8 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
   <li><a href="#modul7">Modul 7 - Array</a></li>
   <li><a href="#modul8">Modul 8 - Fungsi dan Prosedur</a></li>
   <li><a href="#modul9">Modul 9 - Pointer</a></li>
-  <li><a href="Modul 10 - Enumerasi dan Structure">Modul 10 - Enumerasi dan Structure</a></li>
- <li><a href="Modul 11 - File Handling in C">Modul 11 - File Handling in C</a></li>
+  <li><a href="#modul10">Modul 10 - Enumerasi dan Structure</a></li>
+ <li><a href="#modul11">Modul 11 - File Handling in C</a></li>
 </list>
 
 ---
@@ -1006,3 +1006,166 @@ int main(void) {
 
 ---
 <h1 id="modul9">9. Pointer</h1>
+
+### Pengertian Pointer
+Pointer adalah sebuah variabel yang menyimpan alamat memori dari variabel lain. Dengan kata lain, pointer adalah variabel yang berisikan alamat memori dari variabel lain.
+
+Untuk mendeklarasikan pointer, kita perlu menambahkan tanda asterisk (*) di depan nama variabel.
+
+Example :
+```c
+int *p;
+```
+### Penggunaan Pointer
+- Melewatkan nilai variabel ke fungsi-
+- Mengakses elemen array
+- Mengalokasikan memori secara dinamis
+
+### Pointer untuk pass by reference
+Pass by reference adalah teknik untuk meneruskan nilai variabel ke fungsi dengan cara memberikan alamat memori variabel tersebut. Dengan pass by reference, perubahan nilai variabel di dalam fungsi akan berpengaruh pada nilai variabel aslinya.
+
+Untuk menggunakan pointer untuk pass by reference, kita perlu menggunakan operator `&` untuk mengambil alamat memori variabel.
+
+Example :
+```c
+void ubahNilai(int *x) {
+  *x = 10;
+}
+
+int main() {
+  int a = 5;
+
+  ubahNilai(&a);
+
+  printf("Nilai a: %d\n", a);
+
+  return 0;
+}
+```
+Pada program di atas, fungsi `ubahNilai()` menerima parameter `x` yang bertipe `int` dan berisi alamat memori variabel `int`. Di dalam fungsi, nilai variabel `x` diubah menjadi 10.
+
+Saat fungsi `ubahNilai()` kembali, nilai variabel `a` juga akan berubah menjadi 10. Hal ini karena perubahan nilai variabel `x` akan berpengaruh pada nilai variabel `a` yang disimpan di alamat memori yang sama.
+
+### Pointer untuk mengakses array
+Pointer dapat digunakan untuk mengakses elemen array dengan cara menggunakan operator `*` untuk mendereferensi pointer. 
+
+*Example :*
+```c
+int a[10];
+int *p = a;
+
+printf("%d\n", *p); // Mencetak elemen pertama array
+
+p++;
+
+printf("%d\n", *p); // Mencetak elemen kedua array
+```
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
+</div>
+
+---
+<h1 id="modul10">10. Enumerasi dan Structure</h1>
+
+### Pengertian Enum
+Enum adalah tipe data yang berisi sekumpulan konstanta. Enum termasuk dalam tipe data bentukan, karena tipe data ini dibuat sendiri oleh kita.
+
+Untuk mendeklarasikan enum, kita perlu menggunakan kata kunci `enum` kemudian diikuti dengan nama enum dan isinya. 
+
+### Pengertian Structure
+Struct adalah tipe data yang menggabungkan beberapa variabel dengan tipe data yang berbeda dalam satu variabel. Struct juga dikenal dengan records dalam bahasa pemrograman lain seperti Pascal.
+
+Untuk mendeklarasikan struct, kita perlu menggunakan kata kunci `struct` kemudian diikuti dengan nama struct dan isinya. 
+
+### Penggunaan Enum
+- Mendefinisikan konstanta dengan lebih ringkas
+- Mengurangi redundansi kode
+- Meningkatkan keterbacaan kode
+
+Example :
+```c
+enum level {MUDAH, SEDANG, SUSAH};
+
+void main() {
+  enum level level = MUDAH;
+
+  switch (level) {
+    case EASY:
+      printf("Level: Mudah\n");
+      break;
+    case NORMAL:
+      printf("Level: Sedang\n");
+      break;
+    case HARD:
+      printf("Level: Sulit\n");
+      break;
+  }
+}
+```
+
+### Penggunan Struct
+- Menyimpan data dari berbagai tipe data dalam satu variabel
+- Memudahkan akses ke data
+- Meningkatkan keterbacaan kode
+
+Example :
+```c
+struct mahasiswa {
+  char *nama;
+  int nim;
+  float ipk;
+};
+
+void main() {
+  struct mahasiswa mhs1;
+
+  mhs1.nama = "Andi";
+  mhs1.nim = 1234567890;
+  mhs1.ipk = 3.90;
+
+  printf("Nama: %s\n", mhs1.nama);
+  printf("NIM: %d\n", mhs1.nim);
+  printf("IPK: %.2f\n", mhs1.ipk);
+}
+```
+
+### Penggunaan typedef pada Struct
+Typedef adalah tipe data baru yang dibuat berdasarkan tipe data yang sudah ada. Typedef dapat digunakan untuk membuat nama alias untuk tipe data yang sudah ada.
+
+Untuk menggunakan typedef pada struct, kita perlu menggunakan kata kunci `typedef` kemudian diikuti dengan nama alias dan nama struct. 
+
+Example:
+```c
+typedef struct mahasiswa {
+  char *nama;
+  int nim;
+  float ipk;
+} mahasiswa;
+```
+
+### Struct Bersarang
+Struct dapat bersarang, yaitu struct di dalam struct. Struct bersarang dapat digunakan untuk menggabungkan data dari berbagai struct dalam satu variabel.
+
+Example :
+```c
+struct mahasiswa {
+  char *nama;
+  int nim;
+  float ipk;
+};
+
+struct prodi {
+  char *nama;
+  struct mahasiswa *mahasiswa;
+};
+```
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
+</div>
+
+---
+<h1 id="modul11">11. File Handling in C</h1>
+
+### 
