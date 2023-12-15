@@ -30,7 +30,7 @@ Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kul
   <li><a href="#modul6">Modul 6 - Flow Control (Looping)</a></li>
   <li><a href="#modul7">Modul 7 - Array</a></li>
   <li><a href="#modul8">Modul 8 - Fungsi dan Prosedur</a></li>
-  <li><a href="Modul 9 - Pointer">Modul 9 - Pointer</a></li>
+  <li><a href="#modul9">Modul 9 - Pointer</a></li>
   <li><a href="Modul 10 - Enumerasi dan Structure">Modul 10 - Enumerasi dan Structure</a></li>
  <li><a href="Modul 11 - File Handling in C">Modul 11 - File Handling in C</a></li>
 </list>
@@ -68,7 +68,7 @@ Ada banyak IDE yang tersedia untuk bahasa C, antara lain:
 - Xcode: IDE berbayar yang dikembangkan oleh Apple.
 
 <div align="center">
-  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
 
 ---
@@ -158,7 +158,7 @@ int main() {
 Pada contoh program di atas, fungsi `scanf()` digunakan untuk membaca nilai variabel `a` dari keyboard. Nilai variabel `a` kemudian ditampilkan ke layar menggunakan fungsi `printf()`.
 Proses input dan output dapat dilakukan dengan berbagai cara, tergantung pada kebutuhan program.
 <div align="center">
-  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
 
 ---
@@ -291,7 +291,7 @@ Berikut adalah beberapa contoh keywords dalam bahasa C:
 
 Keywords tidak dapat digunakan sebagai nama variabel
 <div align="center">
-  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
 
 ---
@@ -539,7 +539,7 @@ if (a > b) {
 ```
 
 <div align="center">
-  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
 
 ---
@@ -666,7 +666,7 @@ if (a > b) {
 Pada contoh di atas, percabangan if pertama digunakan untuk menentukan apakah a lebih besar dari b. Jika ya, maka percabangan if kedua akan dieksekusi. Percabangan if kedua digunakan untuk menentukan apakah a lebih besar dari 15.
 
 <div align="center">
-  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
 
 ---
@@ -758,7 +758,7 @@ Perulangan bersarang dapat digunakan untuk menyelesaikan berbagai macam masalah,
 - Menghitung luas, volume, atau keliling suatu objek
 
 <div align="center">
-  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
 
 ---
@@ -871,8 +871,138 @@ if (indeks == -1) {
 ```
 
 <div align="center">
-  <a href="#navigator"><kbd> <br> Go Back <br> </kbd></a>
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
 
 ---
 <h1 id="modul8">8. Fungsi dan Prosedur</h1>
+
+### Pengertian Fungsi
+Fungsi adalah blok kode yang dapat digunakan untuk melakukan tugas tertentu. Fungsi dapat digunakan untuk membagi kode menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola.
+
+Fungsi dideklarasikan dengan menggunakan kata kunci `int`, `char`, atau `void`, diikuti dengan nama fungsi, tanda kurung, dan daftar parameter. <br>
+Example :
+```c
+// Fungsi yang mengembalikan nilai integer
+int tambah(int a, int b) {
+  return a + b;
+}
+
+// Fungsi yang tidak mengembalikan nilai
+void cetak(char *str) {
+  printf("%s\n", str);
+}
+```
+
+### Penggunaan Fungsi
+Fungsi dapat digunakan dengan memanggilnya menggunakan nama fungsi, diikuti dengan daftar argumen.
+
+Example :
+```c
+int a = 10;
+int b = 20;
+
+// Memanggil fungsi tambah
+int hasil = tambah(a, b);
+
+// Mencetak hasil
+printf("Hasil: %d\n", hasil);
+
+// Memanggil fungsi cetak
+cetak("Halo, dunia!");
+```
+
+### Fungsi rekursif
+Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri. Fungsi rekursif dapat digunakan untuk menyelesaikan masalah yang melibatkan iterasi.
+
+Example :
+```c
+// Fungsi faktorial
+int faktorial(int n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return n * faktorial(n - 1);
+  }
+}
+```
+### Variabel Lokal & Global
+- Variabel lokal : variabel yang hanya dapat diakses di dalam fungsi di mana variabel tersebut dideklarasikan.
+- Variabel global : variabel yang dapat diakses di seluruh program.
+
+Example :
+```c
+// Variabel lokal
+int fungsi(void) {
+  int a = 10;
+  return a;
+}
+
+// Variabel global
+int a = 10;
+
+int main(void) {
+  // Variabel lokal
+  int b = fungsi();
+
+  // Variabel global
+  a = 20;
+
+  printf("Nilai a: %d\n", a);
+  printf("Nilai b: %d\n", b);
+
+  return 0;
+}
+```
+### Pass by Value
+Pass by value adalah metode pengiriman nilai parameter ke fungsi. Ketika parameter dikirimkan dengan cara pass by value, maka nilai parameter disalin ke variabel lokal di dalam fungsi.
+
+Example :
+```c
+// Fungsi yang mengubah nilai parameter
+void ubah(int *a) {
+  *a = 10;
+}
+
+int main(void) {
+  int a = 5;
+
+  // Mengubah nilai a
+  ubah(&a);
+
+  // Mencetak nilai a
+  printf("Nilai a: %d\n", a);
+
+  return 0;
+}
+```
+
+### Pass by Reference
+Pass by reference adalah metode pengiriman alamat parameter ke fungsi. Ketika parameter dikirimkan dengan cara pass by reference, maka fungsi dapat mengakses dan mengubah nilai parameter asli.
+
+Example :
+```c
+// Fungsi yang mengubah nilai parameter
+void ubah(int *a) {
+  *a = 10;
+}
+
+int main(void) {
+  int a = 5;
+
+  // Mengubah nilai a
+  ubah(&a);
+
+  // Mencetak nilai a
+  printf("Nilai a: %d\n", a);
+
+  return 0;
+}
+```
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
+</div>
+
+---
+<h1 id="modul9">9. Pointer</h1>
