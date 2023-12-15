@@ -142,7 +142,7 @@ Berikut adalah beberapa fungsi output yang tersedia dalam header file `stdio.h` 
 - `printf()`: Fungsi untuk menampilkan teks ke layar.
 - `putchar()`: Fungsi untuk menampilkan satu karakter ke layar.
 
-*Example :*
+**Example :**
 
 ```c
 /* Program input dan output */
@@ -867,7 +867,7 @@ Untuk mendeklarasikan struct, kita perlu menggunakan kata kunci `struct` kemudia
 - Mengurangi redundansi kode
 - Meningkatkan keterbacaan kode
 
-Example :
+**Example :**
 ```c
 enum level {MUDAH, SEDANG, SUSAH};
 
@@ -919,7 +919,7 @@ Typedef adalah tipe data baru yang dibuat berdasarkan tipe data yang sudah ada. 
 
 Untuk menggunakan typedef pada struct, kita perlu menggunakan kata kunci `typedef` kemudian diikuti dengan nama alias dan nama struct. 
 
-**Example:**
+**Example :**
 ```c
 typedef struct mahasiswa {
   char *nama;
