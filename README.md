@@ -1,9 +1,11 @@
 <div align="center">
   <a href="https://unp.ac.id/">
-    <img src="https://unp.ac.id/nfs-assets/all/images/logo_unp_white.png" alt="UNP" width="500"/>
+    <img src="https://unp.ac.id/nfs-assets/all/images/logo_unp_white.png" alt="UNP" width="400"/>
   </a>
 </div>
 
+<div align="center">
+  
 # Biodata Diri
 <table>
 <tr>
@@ -16,6 +18,7 @@ P r o g r a m   S t u d i : I n f o r m a t i k a<br>
 </td>
 </tr>
 </table>
+</div>
 
 # Praktikum Algoritma dan Pemrograman
 `🧑‍🏫️ Dosen : Randi Proska Sandra, M.Sc` <br>
