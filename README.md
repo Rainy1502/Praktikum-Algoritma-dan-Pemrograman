@@ -49,8 +49,8 @@ P R O G R A M   S T U D I : I n f o r m a t i k a<br>
 - Pemrograman adalah proses penulisan kode untuk membuat program komputer. Proses ini meliputi penyusunan algoritma, penulisan kode, dan pengujian program.
 
 Algoritma pemrograman dapat ditulis dalam berbagai bentuk, yaitu:
-- Pseudocode: Pseudocode adalah algoritma yang ditulis dalam bahasa alami, tetapi menggunakan simbol-simbol tertentu untuk mewakili langkah-langkah algoritma.
-- Prosedur: Prosedur adalah algoritma yang ditulis dalam bahasa pemrograman tertentu. <br>
+- **Pseudocode :** Pseudocode adalah algoritma yang ditulis dalam bahasa alami, tetapi menggunakan simbol-simbol tertentu untuk mewakili langkah-langkah algoritma.
+- **Prosedur :** Prosedur adalah algoritma yang ditulis dalam bahasa pemrograman tertentu. <br>
 
 ### Pengenalan Bahasa C
 - Bahasa C adalah bahasa pemrograman tingkat tinggi yang digunakan untuk berbagai macam keperluan, mulai dari sistem operasi, aplikasi, hingga perangkat keras. Bahasa C memiliki sintaks yang sederhana dan mudah dipelajari, sehingga cocok untuk pemula.
@@ -60,17 +60,17 @@ Algoritma pemrograman dapat ditulis dalam berbagai bentuk, yaitu:
 
 IDE (Integrated Development Environment) adalah perangkat lunak yang digunakan untuk menulis, mengedit, dan mengompilasi kode program. IDE dapat memudahkan programmer dalam menulis program, karena menyediakan berbagai macam fitur yang mendukung proses pemrograman, antara lain:
 
-- Editor: Editor untuk menulis kode program.
-- Kompiler: Kompiler untuk mengompilasi kode sumber menjadi kode mesin.
-- Debugger: Debugger untuk memeriksa kesalahan dalam program.
-- Linters: Linter untuk memeriksa kode program untuk potensi kesalahan.
+- **Editor :** Editor untuk menulis kode program.
+- **Kompiler :** Kompiler untuk mengompilasi kode sumber menjadi kode mesin.
+- **Debugger :** Debugger untuk memeriksa kesalahan dalam program.
+- **Linters :** Linter untuk memeriksa kode program untuk potensi kesalahan.
 
 ### Contoh IDE
 Ada banyak IDE yang tersedia untuk bahasa C, antara lain:
-- Dev-C++: IDE gratis dan open source yang populer untuk bahasa C.
-- Code::Blocks: IDE gratis dan open source yang juga populer untuk bahasa C.
-- Visual Studio: IDE berbayar yang dikembangkan oleh Microsoft.
-- Xcode: IDE berbayar yang dikembangkan oleh Apple.
+- **Dev-C++ :** IDE gratis dan open source yang populer untuk bahasa C.
+- **Code::Blocks :** IDE gratis dan open source yang juga populer untuk bahasa C.
+- **Visual Studio :** IDE berbayar yang dikembangkan oleh Microsoft.
+- **Xcode :** IDE berbayar yang dikembangkan oleh Apple.
 
 <div align="center">
   <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
@@ -125,7 +125,8 @@ Pada contoh program di atas, struktur dasar program C terdiri dari:
 
 ### Proses Input & Output
 
-Proses input dan output adalah salah satu proses penting dalam pemrograman. Proses input digunakan untuk memasukkan data dari luar program, sedangkan proses output digunakan untuk menampilkan data ke luar program. <br>
+- **Proses Input :** Memasukkan data dari luar program
+- **Proses Output:** Menampilkan data ke luar program. 
 
 Dalam bahasa C, proses input dan output dapat dilakukan dengan menggunakan fungsi-fungsi standar yang tersedia dalam header file `stdio.h`.
 
@@ -161,7 +162,7 @@ int main() {
 }
 ```
 Pada contoh program di atas, fungsi `scanf()` digunakan untuk membaca nilai variabel `a` dari keyboard. Nilai variabel `a` kemudian ditampilkan ke layar menggunakan fungsi `printf()`.
-Proses input dan output dapat dilakukan dengan berbagai cara, tergantung pada kebutuhan program.
+
 <div align="center">
   <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
 </div>
@@ -170,12 +171,11 @@ Proses input dan output dapat dilakukan dengan berbagai cara, tergantung pada ke
 <h1 id="modul3">3. Variabel, Konstanta dan Tipe Data</h1>
 
 ### Variabel & Konstanta
-- Variabel adalah tempat penyimpanan data dalam memori komputer. Variabel dapat digunakan untuk menyimpan berbagai macam data, seperti angka, huruf, karakter, atau bilangan kompleks.
-
-- Konstanta adalah nilai yang tidak dapat diubah selama program berjalan. Konstanta biasanya digunakan untuk menyimpan nilai-nilai yang tidak berubah, seperti konstanta fisika atau konstanta matematika.
+- **Variabel :** Tempat penyimpanan data dalam memori komputer. Variabel dapat digunakan untuk menyimpan berbagai macam data, seperti angka, huruf, karakter, atau bilangan kompleks.
+- **Konstanta :** Nilai yang tidak dapat diubah selama program berjalan. Konstanta biasanya digunakan untuk menyimpan nilai-nilai yang tidak berubah, seperti konstanta fisika atau konstanta matematika.
 
 ### Deklarasi Variabel
-Variabel dideklarasikan dengan menggunakan keyword 
+Variabel dideklarasikan dengan menggunakan keyword :
 - `int` 
 - `char` 
 - `float` 
