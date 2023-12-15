@@ -247,7 +247,8 @@ Bahasa C memiliki beberapa tipe data fundamental, yaitu:
 - `float`: Tipe data floating-point untuk menyimpan bilangan desimal.
 - `double`: Tipe data double-precision floating-point untuk menyimpan bilangan desimal dengan presisi yang lebih tinggi dari tipe data `float`.
 
-Berikut adalah tabel ukuran memori untuk tipe data fundamental:
+<div align="center">
+
 
 |   Tipe Data	  | Ukuran Memori |
 | ------------- | ------------- |
@@ -255,6 +256,9 @@ Berikut adalah tabel ukuran memori untuk tipe data fundamental:
 |     `char`    | 1 Byte        |
 |     `float`   | 4 Byte        |
 |     `double`  | 8 byte        |
+
+**Tabel Ukuran Memori**
+</div>
 
 ## Type Casting
 Type casting adalah konversi tipe data dari satu tipe data ke tipe data lainnya.
@@ -305,7 +309,8 @@ Keywords tidak dapat digunakan sebagai nama variabel
 ### Operator Aritmatika
 Operator aritmatika digunakan untuk melakukan operasi aritmatika, seperti penjumlahan, pengurangan, perkalian, pembagian, dan sisa bagi
 
-Berikut adalah operator aritmatika dalam bahasa C:
+<div align="center">
+  
 |   Operator	  | Deskripsi     |
 | ------------- | ------------- |
 |     `+`   	  | Penjumlahan        |
@@ -314,37 +319,14 @@ Berikut adalah operator aritmatika dalam bahasa C:
 |     `/`       | Pembagian        |
 |     `%`       | Sisa bagi        |
 
-Berikut adalah contoh penggunaan operator aritmatika:
-
-```c
-int a = 10;
-int b = 5;
-
-// Penjumlahan
-int c = a + b;
-printf("Nilai c = %d\n", c); // Nilai c = 15
-
-// Pengurangan
-int d = a - b;
-printf("Nilai d = %d\n", d); // Nilai d = 5
-
-// Perkalian
-int e = a * b;
-printf("Nilai e = %d\n", e); // Nilai e = 50
-
-// Pembagian
-int f = a / b;
-printf("Nilai f = %d\n", f); // Nilai f = 2
-
-// Sisa bagi
-int g = a % b;
-printf("Nilai g = %d\n", g); // Nilai g = 0
-```
+**Tabel Operator Aritmatika**
+</div>
 
 ### Operator Penugasan
 Operator penugasan digunakan untuk memberikan nilai ke variabel.
 
-Berikut adalah operator penugasan dalam bahasa C:
+<div align="center">
+  
 |   Operator	  | Deskripsi     |
 | ------------- | ------------- |
 |     `=`   	  | Penugasan sederhana       |
@@ -354,39 +336,14 @@ Berikut adalah operator penugasan dalam bahasa C:
 |     `/=`       | Pembagian        |
 |     `%=`       | Sisa bagi        |
 
-Berikut adalah contoh penggunaan operator penugasan:
-```C
-int a = 10;
-
-// Penugasan sederhana
-a = 5;
-printf("Nilai a = %d\n", a); // Nilai a = 5
-
-// Penambahan
-a += 5;
-printf("Nilai a = %d\n", a); // Nilai a = 10
-
-// Pengurangan
-a -= 5;
-printf("Nilai a = %d\n", a); // Nilai a = 5
-
-// Perkalian
-a *= 5;
-printf("Nilai a = %d\n", a); // Nilai a = 25
-
-// Pembagian
-a /= 5;
-printf("Nilai a = %d\n", a); // Nilai a = 5
-
-// Sisa bagi
-a %= 5;
-printf("Nilai a = %d\n", a); // Nilai a = 0
-```
+**Tabel Operator Penugasan**
+</div>
 
 ### Operator Pembanding
 Operator pembanding digunakan untuk membandingkan nilai dua variabel.
 
-Berikut adalah operator pembanding dalam bahasa C:
+<div align="center">
+  
 |   Operator	  | Deskripsi     |
 | ------------- | ------------- |
 |     `==`   	  | Sama dengan       |
@@ -396,68 +353,28 @@ Berikut adalah operator pembanding dalam bahasa C:
 |     `>=`       | Lebih besar dari atau sama dengan |
 |     `<=`       | Lebih kecil dari atau sama dengan |
 
-Berikut adalah contoh penggunaan operator pembanding:
-```c
-int a = 10;
-int b = 5;
-
-// Sama dengan
-int c = (a == b);
-printf("Nilai c = %d\n", c); // Nilai c = 0
-
-// Tidak sama dengan
-int d = (a != b);
-printf("Nilai d = %d\n", d); // Nilai d = 1
-
-// Lebih besar dari
-int e = (a > b);
-printf("Nilai e = %d\n", e); // Nilai e = 1
-
-// Lebih kecil dari
-int f = (a < b);
-printf("Nilai f = %d\n", f); // Nilai f = 0
-
-// Lebih besar dari atau sama dengan
-int g = (a >= b);
-printf("Nilai g = %d\n", g); // Nilai g = 1
-
-// Lebih kecil dari atau sama dengan
-int h = (a <= b);
-printf("Nilai h = %d\n", h); // Nilai h = 0
-```
+**Tabel Operator Pembanding**
+</div>
 
 ### Operator Logika
 Operator logika digunakan untuk menggabungkan hasil dari dua atau lebih operator pembanding.
 
-Berikut adalah operator logika dalam bahasa C:
+<div align="center">
+  
 |   Operator	  | Deskripsi     |
 | ------------- | ------------- |
 |     `&&`   	  | AND    |
 |     `       | ` |
 |     `!`       | NOT  |
 
-Berikut adalah contoh penggunaan operator logika:
-```c
-int a = 10;
-int b = 5;
-
-// AND
-int c = (a > b) && (a < 15);
-printf("Nilai c = %d\n", c); // Nilai c = 1
-
-// OR
-int d = (a > b) || (a < 15);
-printf("Nilai d = %d\n", d); // Nilai d = 1
-
-// NOT
-int e = !(a > b);
-printf("Nilai e = %d\n", e); // Nilai e = 1
-```
+**Tabel Operator Logika**
+</div>
 
 ### Operator Bitwise
 Operator bitwise digunakan untuk memanipulasi bit-bit dari suatu variabel.
 
-Berikut adalah operator bitwise dalam bahasa C:
+<div align="center">
+  
 |   Operator	  | Deskripsi     |
 | ------------- | ------------- |
 |     `&`   	  | AND       |
@@ -467,35 +384,8 @@ Berikut adalah operator bitwise dalam bahasa C:
 |     `<<`       | Shift Kiri |
 |     `>>`       | Shift kanan |
 
-Berikut adalah contoh penggunaan operator bitwise:
-```c
-int a = 10; // 00001010
-int b = 5; // 00000101
-
-// AND
-int c = a & b; // 00000100
-printf("Nilai c = %d\n", c); // Nilai c = 4
-
-// OR
-int d = a | b; // 00001111
-printf("Nilai d = %d\n", d); // Nilai d = 15
-
-// XOR
-int e = a ^ b; // 00001011
-printf("Nilai e = %d\n", e); // Nilai e = 11
-
-// NOT
-int f = ~a; // 11110101
-printf("Nilai f = %d\n", f); // Nilai f = -11
-
-// Shift kiri
-int g = a << 2; // 00101000
-printf("Nilai g = %d\n", g); // Nilai g = 40
-
-// Shift kanan
-int h = a >> 2; // 00000101
-printf("Nilai h = %d\n", h); // Nilai h = 5
-```
+**Tabel Operator Bitwise**
+</div>
 
 ### Operator Kondisional
 
@@ -509,18 +399,6 @@ if (kondisi) {
   // Blok kode jika kondisi terpenuhi
 } else {
   // Blok kode jika kondisi tidak terpenuhi
-}
-```
-Berikut adalah contoh penggunaan operator `if-else`:
-```c
-int a = 10;
-int b = 5;
-
-// Menentukan apakah a lebih besar dari b
-if (a > b) {
-  printf("a lebih besar dari b\n");
-} else {
-  printf("b lebih besar dari a atau a sama dengan b\n");
 }
 ```
 
