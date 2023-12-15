@@ -1,4 +1,8 @@
-# [![UNP](https://unp.ac.id/nfs-assets/all/images/logo_unp_white.png)](https://unp.ac.id/)
+<div align="center">
+  <a href="https://unp.ac.id/">
+    <img src="https://unp.ac.id/nfs-assets/all/images/logo_unp_white.png" alt="UNP" width="700"/>
+  </a>
+</div>
 
 # Biodata Diri
 <table>
