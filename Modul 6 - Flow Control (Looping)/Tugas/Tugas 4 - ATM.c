@@ -49,7 +49,7 @@ int main() {
                         printf("Saldo Anda tidak mencukupi.\n\n"); 
 						printf("Saldo minimal yang harus tersisa adalah Rp.50.000\n");
                     } else {
-                        saldo -= nominal; // Deduct the withdrawal amount from the balance
+                        saldo -= nominal;
                         printf("Nomor rekening : %s\n", no_rek);
                         printf("Nama Akun : %s\n", nama_akun);
                         printf("Penarikan tunai berhasil dilakukan\n\n");
