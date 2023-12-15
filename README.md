@@ -22,8 +22,6 @@ P r o g r a m   S t u d i : I n f o r m a t i k a<br>
 `📋 Kode Kelas : INF1.62.1008` <br>
 `📑 Semester : 1` <br>
 
-Repositori ini berisi semua tugas praktikum algoritma pemrograman. Pada mata kuliah ini mahasiswa mempelajari tentang prinsip, konsep dan metode dalam menyelesaikan masalah komputasi yang akan digunakan dalam pembuatan suatu aplikasi sederhana. Mahasiswa mempelajari konsep dasar komputer dan sistem komputer, penulisan algoritma program, tipe data, pengenal, operator, struktur program, pemrograman modular, fungsi dan prosedur serta pencarian dan pengurutan data.
-
 <h2 id="navigator">Modul</h2>
 <list>
   <li><a href="#modul1">Modul 1 - Pengantar Algoritma dan Pemrograman</a></li>
