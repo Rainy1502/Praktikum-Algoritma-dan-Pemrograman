@@ -1168,4 +1168,30 @@ struct prodi {
 ---
 <h1 id="modul11">11. File Handling in C</h1>
 
-### 
+### Membaca File dengan C
+Untuk membaca file dengan C, kita perlu menggunakan fungsi `fopen()` untuk membuka file. Fungsi `fopen()` menerima dua parameter, yaitu nama file dan mode. Mode menentukan bagaimana file akan dibuka.
+
+Ada beberapa mode yang dapat digunakan untuk membuka file, antara lain:
+- `r` : Membuka file untuk dibaca
+- `w` : Membuka file untuk ditulis
+- `a` : Membuka file untuk ditambahkan datanya di bagian paling bawah baris terakhir
+- `r+` : Sama dengan `r`, tetapi selain file dapat dibaca juga dapat ditulis
+- `w+` : Sama dengan `w`, tetapi selain file dapat ditulis juga dapat dibaca
+- `a+` : Sama dengan `a`, tetapi selain file dapat ditulis juga dapat dibaca
+
+Setelah file dibuka, kita dapat membaca data dari file dengan menggunakan fungsi `fread()`. Fungsi `fread()` menerima tiga parameter, yaitu alamat memori tempat menyimpan data yang dibaca, jumlah data yang akan dibaca, dan ukuran data yang akan dibaca.
+
+### Menulis dalam File dengan C
+Untuk menulis dalam file dengan C, kita perlu menggunakan fungsi `fopen()` untuk membuka file. Fungsi `fopen()` menerima dua parameter, yaitu nama file dan mode. Mode menentukan bagaimana file akan dibuka.
+
+Ada beberapa mode yang dapat digunakan untuk membuka file, antara lain:
+- `w` : Membuka file untuk ditulis
+- `a` : Membuka file untuk ditambahkan datanya di bagian paling bawah baris terakhir
+- `w+` : Sama dengan `w`, tetapi selain file dapat ditulis juga dapat dibaca
+- `a+` : Sama dengan `a`, tetapi selain file dapat ditulis juga dapat dibaca
+
+Setelah file dibuka, kita dapat menulis data ke file dengan menggunakan fungsi `fwrite()`. Fungsi `fwrite()` menerima tiga parameter, yaitu data yang akan ditulis, jumlah data yang akan ditulis, dan ukuran data yang akan ditulis.
+
+<div align="center">
+  <a href="#navigator"><kbd> <br> Kembali <br> </kbd></a>
+</div>
