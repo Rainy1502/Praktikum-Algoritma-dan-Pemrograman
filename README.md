@@ -561,15 +561,6 @@ Array adalah struktur data yang digunakan untuk menyimpan kumpulan data dengan t
 int angka[10]; // Array yang menyimpan 10 bilangan bulat
 char nama[20]; // Array yang menyimpan 20 karakter
 ```
-Array dapat diakses menggunakan indeks, yaitu bilangan bulat yang menunjukkan posisi elemen array. Indeks dimulai dari 0.
-**Example :**
-```c
-// Mencetak angka ke-5 dari array angka
-printf("%d\n", angka[4]);
-
-// Mencetak karakter ke-10 dari array nama
-printf("%c\n", nama[9]);
-```
 
 ### Penggunaan Array
 Array dapat digunakan untuk berbagai macam keperluan, seperti:
@@ -579,9 +570,10 @@ Array dapat digunakan untuk berbagai macam keperluan, seperti:
 - Menghitung rata-rata data
 - Menghitung total data
 
-Berikut adalah beberapa contoh penggunaan array:
-#### Menyimpan kumpulan data
+Berikut adalah beberapa contoh penggunaan array :
+#### 1) Menyimpan kumpulan data
 Array dapat digunakan untuk menyimpan kumpulan data, seperti nama, umur, nilai, atau hasil tes.
+
 **Example :**
 ```c
 // Mendeklarasikan array nama
@@ -599,8 +591,9 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-#### Mengurutkan data
+#### 2) Mengurutkan data
 Array dapat digunakan untuk mengurutkan data, seperti nama, umur, nilai, atau hasil tes.
+
 **Example :**
 ```c
 // Mendeklarasikan array angka
@@ -629,8 +622,9 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-#### Mencari data
+#### 3) Mencari data
 Array dapat digunakan untuk mencari data, seperti nama, umur, nilai, atau hasil tes.
+
 **Example :**
 ```c
 // Mendeklarasikan array nama
