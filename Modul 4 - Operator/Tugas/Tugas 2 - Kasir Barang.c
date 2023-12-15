@@ -17,35 +17,34 @@ void judul() {
     printf("\n");                                          
 }
 
-void Inputbarang (char NamaCustomer[], char NamaItem[], int *JumlahItem, float *HargaItem) {
+void Inputbarang (char NamaCustomer[], char NamaBarang[], int *JumlahBarang, float *HargaBarang) {
     printf("Input Nama Anda: ");
     scanf("%s", NamaCustomer);
 
     printf("Input Nama Barang yang ingin anda beli: ");
-    scanf("%s", NamaItem);
+    scanf("%s", NamaBarang);
     
-    printf("Input Jumlah Item yang anda beli: ");
-    scanf("%i", JumlahItem);
+    printf("Input Jumlah Barang yang anda beli: ");
+    scanf("%i", JumlahBarang);
     
-    printf("Input Harga Item yang anda beli: ");
-    scanf("%f", HargaItem);
+    printf("Input Harga Barang yang anda beli: ");
+    scanf("%f", HargaBarang);
 }
 
 float HargaT(int JumlahItem, float HargaItem, float HargaTotal) {
 	return HargaItem * JumlahItem;
 }
 
-void TampilanOutput (char NamaCustomer[], char NamaItem[], int JumlahItem, float HargaItem, float HargaTotal) {
+void TampilanOutput (char NamaCustomer[], char NamaBarang[], int JumlahBarang, float HargaBarang, float HargaTotal) {
 	
-	float HargaTot = HargaT(JumlahItem, HargaItem, HargaTotal);
+	float HargaTot = HargaT(JumlahBarang, HargaBarang, HargaTotal);
 	
 	printf("\n----------------------------------------\n");
-	printf("Halo %s Semoga harinya berjalan dengan lancar ya...\n", NamaCustomer);
-	printf("Barang yang anda beli adalah : %s\n", NamaItem);
-	printf("Jumlah yang anda beli adalah : %ipcs\n", JumlahItem);
-	printf("Harga barang yang anda beli adalah : Rp.%.2f\n", HargaItem);
-	printf("Total harga barang adalah Rp.%.2f\n", HargaTot);
-	printf("Terima kasih sudah menggunakan jasa belanja ini.");
+	printf("Nama Pembeli       : %s\n", NamaCustomer);
+	printf("Nama Barang        : %s	\n", NamaBarang);
+	printf("Jumlah Barang      : %ipcs	\n", JumlahBarang);
+	printf("Harga barang       : Rp.%.2f\n", HargaBarang);
+	printf("Total harga barang : Rp.%.2f\n", HargaTot);
 }
 
 int main() {
