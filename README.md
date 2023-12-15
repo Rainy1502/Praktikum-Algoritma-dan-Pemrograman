@@ -80,23 +80,23 @@ Ada banyak IDE yang tersedia untuk bahasa C, antara lain:
 <h1 id="modul2">2. Pemrograman Dasar C</h1>
 
 ### Struktur dasar program C terdiri dari tiga bagian utama, yaitu:
-- Judul program: Bagian ini berisi nama program dan keterangan singkat tentang program.
-- Header file: Bagian ini berisi deklarasi fungsi-fungsi yang akan digunakan dalam program.
-- Deklarasi: Bagian ini berisi deklarasi variabel, konstanta, dan tipe data yang akan digunakan dalam program.
-- Deskripsi: Bagian ini berisi inti program, yaitu langkah-langkah penyelesaian masalah.
+- **Judul program :** Bagian ini berisi nama program dan keterangan singkat tentang program.
+- **Header file :** Bagian ini berisi deklarasi fungsi-fungsi yang akan digunakan dalam program.
+- **Deklarasi :** Bagian ini berisi deklarasi variabel, konstanta, dan tipe data yang akan digunakan dalam program.
+- **Deskripsi :** Bagian ini berisi inti program, yaitu langkah-langkah penyelesaian masalah.
 
-Judul program ditulis dalam bentuk komentar. Komentar dalam C dimulai dengan tanda pagar `(#)` diikuti dengan teks komentar.
+**Judul program** ditulis dalam bentuk komentar. Komentar dalam C dimulai dengan tanda pagar `(#)` diikuti dengan teks komentar.
 
-Header file ditulis dengan menggunakan preprocessor directive `#include`. Preprocessor directive adalah bagian dari kode program yang akan dieksekusi oleh preprocessor sebelum kode program dijalankan.
+**Header file** ditulis dengan menggunakan preprocessor directive `#include`. Preprocessor directive adalah bagian dari kode program yang akan dieksekusi oleh preprocessor sebelum kode program dijalankan.
 
-Deklarasi ditulis dengan menggunakan keyword `int`, `char`, `float`, `double`, atau `struct`.
+**Deklarasi** ditulis dengan menggunakan keyword `int`, `char`, `float`, `double`, atau `struct`.
 
-Deskripsi ditulis dengan menggunakan blok kode yang diawali dengan tanda kurung kurawal buka `{` dan diakhiri dengan tanda kurung kurawal tutup `}`.
+**Deskripsi** ditulis dengan menggunakan blok kode yang diawali dengan tanda kurung kurawal buka `{` dan diakhiri dengan tanda kurung kurawal tutup `}`.
 
-*Example :*
+**Example :**
 
 ```c
-/* Program Hello World */
+/* Program Awal */
 
 #include <stdio.h>
 
@@ -114,14 +114,14 @@ int main() {
 ```
 Pada contoh program di atas, struktur dasar program C terdiri dari:
 
-- Judul program: "Program Hello World"
-- Header file: <stdio.h>
-- Deklarasi:
-  - Variabel a dengan tipe data int
-  - Variabel b dengan tipe data char
-- Deskripsi:
-  - Mencetak nilai variabel a ke layar
-  - Mencetak nilai variabel b ke layar
+- **Judul program :** "Program Awal"
+- **Header file :** `<stdio.h>`
+- **Deklarasi :**
+  - Variabel `a` dengan tipe data `int`
+  - Variabel `b` dengan tipe data `char`
+- **Deskripsi:**
+  - Mencetak nilai variabel `a` ke layar
+  - Mencetak nilai variabel `b` ke layar
 
 ### Proses Input & Output
 
@@ -131,13 +131,13 @@ Dalam bahasa C, proses input dan output dapat dilakukan dengan menggunakan fungs
 
 ### Fungsi input
 
-Berikut adalah beberapa fungsi input yang tersedia dalam header file stdio.h:
+Berikut adalah beberapa fungsi input yang tersedia dalam header file `stdio.h` :
 - `scanf()`: Fungsi untuk membaca data dari keyboard.
 - `getchar()`: Fungsi untuk membaca satu karakter dari keyboard.
 
 ### Fungsi output
 
-Berikut adalah beberapa fungsi output yang tersedia dalam header file `stdio.h`:
+Berikut adalah beberapa fungsi output yang tersedia dalam header file `stdio.h` :
 - `printf()`: Fungsi untuk menampilkan teks ke layar.
 - `putchar()`: Fungsi untuk menampilkan satu karakter ke layar.
 
@@ -182,19 +182,6 @@ Variabel dideklarasikan dengan menggunakan keyword
 - `double`  
 - `struct`
 
-Berikut adalah contoh deklarasi variabel:
-
-```c
-int a; // variabel integer
-char b; // variabel karakter
-float c; // variabel floating-point
-double d; // variabel double-precision floating-point
-struct s { // variabel struktur
-  int x;
-  char y;
-};
-```
-
 ### Akses Variabel
 Nilai variabel dapat diakses dengan menggunakan operator `.` atau `->`.
 
@@ -202,7 +189,7 @@ Operator `.` digunakan untuk mengakses anggota variabel struktur.
 
 Operator `->` digunakan untuk mengakses anggota variabel struktur secara langsung.
 
-Berikut adalah contoh akses variabel:
+**Example :**
 
 ```c
 int a = 10;
@@ -231,7 +218,7 @@ printf("Nilai s.y = %c\n", s.y);
 ### Nilai Awal Variabel
 Nilai awal variabel dapat ditentukan saat deklarasi variabel.
 
-Berikut adalah contoh nilai awal variabel:
+**Example :**
 ```c
 int a = 10; // nilai awal variabel a = 10
 char b = 'A'; // nilai awal variabel b = 'A'
@@ -265,7 +252,7 @@ Type casting adalah konversi tipe data dari satu tipe data ke tipe data lainnya.
 
 Type casting dapat dilakukan dengan menggunakan operator `()`.
 
-Berikut adalah contoh type casting:
+**Example :**
 ```c
 int a = 10;
 float b = 3.14;
@@ -393,7 +380,7 @@ Operator kondisional digunakan untuk memilih blok kode yang akan dieksekusi berd
 
 Operator kondisional dalam bahasa C adalah `if-else`.
 
-Berikut adalah sintaks operator `if-else`:
+**Sintaks operator `if-else`**
 ```c
 if (kondisi) {
   // Blok kode jika kondisi terpenuhi
@@ -404,7 +391,7 @@ if (kondisi) {
 
 Operator kondisional `if-else` dapat digunakan secara bersarang, yaitu dengan menggunakan operator `if-else` di dalam blok kode `if-else` lainnya.
 
-Berikut adalah contoh penggunaan operator `if-else` bersarang:
+**Example :**
 ```c
 int a = 10;
 int b = 5;
@@ -431,27 +418,16 @@ if (a > b) {
 ### If
 Pernyataan if digunakan untuk mengeksekusi blok kode jika kondisi tertentu terpenuhi.
 
-Sintaks pernyataan if:
+**Sintaks pernyataan :**
 ```c
 if (kondisi) {
   // Blok kode yang akan dieksekusi jika kondisi terpenuhi
 }
 ```
-Example :
-```c
-int a = 10;
-int b = 5;
-
-// Menentukan apakah a lebih besar dari b
-if (a > b) {
-  printf("a lebih besar dari b\n");
-}
-```
-
 ### If Else
 Pernyataan if else digunakan untuk mengeksekusi blok kode jika kondisi tertentu terpenuhi, atau blok kode yang berbeda jika kondisi tidak terpenuhi.
 
-Sintaks pernyataan if else:
+**Sintaks pernyataan :**
 ```c
 if (kondisi) {
   // Blok kode yang akan dieksekusi jika kondisi terpenuhi
@@ -459,23 +435,12 @@ if (kondisi) {
   // Blok kode yang akan dieksekusi jika kondisi tidak terpenuhi
 }
 ```
-Example :
-```c
-int a = 10;
-int b = 5;
 
-// Menentukan apakah a lebih besar dari b
-if (a > b) {
-  printf("a lebih besar dari b\n");
-} else {
-  printf("b lebih besar dari a atau a sama dengan b\n");
-}
-```
 
 ### Switch Case
 Pernyataan switch case digunakan untuk mengeksekusi blok kode berdasarkan nilai suatu variabel.
 
-Sintaks pernyataan switch case:
+**Sintaks pernyataan :**
 ```c
 switch (variabel) {
   case nilai1:
@@ -490,47 +455,17 @@ switch (variabel) {
     break;
 }
 ```
-Example :
-```c
-int a = 10;
-
-// Menentukan nilai a
-switch (a) {
-  case 1:
-    printf("a bernilai 1\n");
-    break;
-  case 2:
-    printf("a bernilai 2\n");
-    break;
-  case 3:
-    printf("a bernilai 3\n");
-    break;
-  default:
-    printf("a tidak memiliki nilai yang cocok\n");
-    break;
-}
-```
 ### Operator Ternary
 Operator ternary digunakan untuk mengeksekusi blok kode berdasarkan kondisi tertentu.
 
-Sintaks operator ternary:
+**Sintaks pernyataan :**
 ```c
 ekspresi ? nilai_jika_benar : nilai_jika_salah;
-```
-Example :
-```c
-int a = 10;
-int b = 5;
-
-// Menentukan apakah a lebih besar dari b
-int hasil = (a > b) ? 1 : 0;
-
-printf("a lebih besar dari b: %d\n", hasil);
 ```
 ### Percabangan Bersarang (Nested)
 Percabangan bersarang adalah penggunaan percabangan di dalam percabangan lainnya.
 
-Example :
+**Example :**
 ```c
 int a = 10;
 int b = 5;
@@ -558,71 +493,42 @@ Pada contoh di atas, percabangan if pertama digunakan untuk menentukan apakah a 
 ### Perulangan for
 Perulangan for digunakan untuk mengeksekusi blok kode tertentu secara berulang-ulang, dengan jumlah pengulangan yang telah ditentukan.
 
-Sintaks perulangan for:
+**Sintaks perulangan for :**
 ```C
 for (inisialisasi; kondisi; iterasi) {
   // Blok kode yang akan dieksekusi secara berulang-ulang
 }
 ```
 Bagian-bagian dari sintaksis perulangan for adalah sebagai berikut:
-- Inisialisasi: Bagian ini digunakan untuk menginisialisasi variabel yang digunakan untuk mengendalikan pengulangan.
-- Kondisi: Bagian ini digunakan untuk menentukan apakah pengulangan akan dilanjutkan atau dihentikan.
-- Iterasi: Bagian ini digunakan untuk mengubah nilai variabel yang digunakan untuk mengendalikan pengulangan.
-
-*Example :*
-```c
-// Mencetak angka dari 1 hingga 10
-for (int i = 1; i <= 10; i++) {
-  printf("%d\n", i);
-}
-```
-Pada contoh di atas, perulangan for akan dieksekusi 10 kali, dengan nilai i dimulai dari 1 dan diakhiri dengan 10.
+- **Inisialisasi**: Bagian ini digunakan untuk menginisialisasi variabel yang digunakan untuk mengendalikan pengulangan.
+- **Kondisi**: Bagian ini digunakan untuk menentukan apakah pengulangan akan dilanjutkan atau dihentikan.
+- **Iterasi**: Bagian ini digunakan untuk mengubah nilai variabel yang digunakan untuk mengendalikan pengulangan.
 
 ### Perulangan while
 Perulangan while digunakan untuk mengeksekusi blok kode tertentu secara berulang-ulang, selama kondisi tertentu terpenuhi.
 
-Sintaks perulangan while:
+**Sintaks perulangan while :**
 ```c
 while (kondisi) {
   // Blok kode yang akan dieksekusi secara berulang-ulang
 }
 ```
 Pada contoh di atas, perulangan while akan dieksekusi selama kondisi terpenuhi.
-Example :
-```c
-// Mencetak angka dari 1 hingga 10
-int i = 1;
-while (i <= 10) {
-  printf("%d\n", i);
-  i++;
-}
-```
-Pada contoh di atas, perulangan while akan dieksekusi selama nilai i kurang dari atau sama dengan 10.
 
 ### Perulangan Do While
 Perulangan do while digunakan untuk mengeksekusi blok kode tertentu secara berulang-ulang, setidaknya satu kali, selama kondisi tertentu terpenuhi.
 
-Sintaks perulangan do while:
+**Sintaks perulangan do while :**
 ```c
 do {
   // Blok kode yang akan dieksekusi secara berulang-ulang
 } while (kondisi);
 ```
 Pada contoh di atas, perulangan do while akan dieksekusi setidaknya satu kali, kemudian kondisi akan diperiksa. Jika kondisi terpenuhi, maka blok kode akan dieksekusi kembali.
-Example :
-```c
-// Mencetak angka dari 1 hingga 10
-int i = 1;
-do {
-  printf("%d\n", i);
-  i++;
-} while (i <= 10);
-```
-Pada contoh di atas, perulangan do while akan dieksekusi setidaknya satu kali, yaitu untuk mencetak angka 1. Kemudian, kondisi akan diperiksa. Jika kondisi terpenuhi, maka blok kode akan dieksekusi kembali untuk mencetak angka 2, dan seterusnya.
 
 ### Perulangan Bersarang (Nested Loop)
 Perulangan bersarang adalah penggunaan perulangan di dalam perulangan lainnya.
-Example : 
+**Example :**
 ```c
 // Mencetak segitiga Pascal
 for (int i = 0; i < 10; i++) {
@@ -650,13 +556,13 @@ Perulangan bersarang dapat digunakan untuk menyelesaikan berbagai macam masalah,
 ### Pengertian Array
 Array adalah struktur data yang digunakan untuk menyimpan kumpulan data dengan tipe data yang sama. Array dideklarasikan dengan menggunakan tipe data dan nama array, diikuti dengan tanda kurung siku.
 
-Berikut adalah contoh deklarasi array:
+**Deklarasi Array :**
 ```c
 int angka[10]; // Array yang menyimpan 10 bilangan bulat
 char nama[20]; // Array yang menyimpan 20 karakter
 ```
 Array dapat diakses menggunakan indeks, yaitu bilangan bulat yang menunjukkan posisi elemen array. Indeks dimulai dari 0.
-Example :
+**Example :**
 ```c
 // Mencetak angka ke-5 dari array angka
 printf("%d\n", angka[4]);
@@ -676,7 +582,7 @@ Array dapat digunakan untuk berbagai macam keperluan, seperti:
 Berikut adalah beberapa contoh penggunaan array:
 #### Menyimpan kumpulan data
 Array dapat digunakan untuk menyimpan kumpulan data, seperti nama, umur, nilai, atau hasil tes.
-Example :
+**Example :**
 ```c
 // Mendeklarasikan array nama
 char nama[10][20];
@@ -695,7 +601,7 @@ for (int i = 0; i < 10; i++) {
 
 #### Mengurutkan data
 Array dapat digunakan untuk mengurutkan data, seperti nama, umur, nilai, atau hasil tes.
-Example :
+**Example :**
 ```c
 // Mendeklarasikan array angka
 int angka[10];
@@ -725,7 +631,7 @@ for (int i = 0; i < 10; i++) {
 
 #### Mencari data
 Array dapat digunakan untuk mencari data, seperti nama, umur, nilai, atau hasil tes.
-Example :
+**Example :**
 ```c
 // Mendeklarasikan array nama
 char nama[10][20];
@@ -761,10 +667,11 @@ if (indeks == -1) {
 <h1 id="modul8">8. Fungsi dan Prosedur</h1>
 
 ### Pengertian Fungsi
-Fungsi adalah blok kode yang dapat digunakan untuk melakukan tugas tertentu. Fungsi dapat digunakan untuk membagi kode menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola.
+- Fungsi adalah blok kode yang dapat digunakan untuk melakukan tugas tertentu. Fungsi dapat digunakan untuk membagi kode menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola.
 
-Fungsi dideklarasikan dengan menggunakan kata kunci `int`, `char`, atau `void`, diikuti dengan nama fungsi, tanda kurung, dan daftar parameter. <br>
-Example :
+- Fungsi dideklarasikan dengan menggunakan kata kunci `int`, `char`, atau `void`, diikuti dengan nama fungsi, tanda kurung, dan daftar parameter. <br>
+
+**Example :**
 ```c
 // Fungsi yang mengembalikan nilai integer
 int tambah(int a, int b) {
@@ -780,7 +687,7 @@ void cetak(char *str) {
 ### Penggunaan Fungsi
 Fungsi dapat digunakan dengan memanggilnya menggunakan nama fungsi, diikuti dengan daftar argumen.
 
-Example :
+**Example :**
 ```c
 int a = 10;
 int b = 20;
@@ -798,7 +705,7 @@ cetak("Halo, dunia!");
 ### Fungsi rekursif
 Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri. Fungsi rekursif dapat digunakan untuk menyelesaikan masalah yang melibatkan iterasi.
 
-Example :
+**Example :**
 ```c
 // Fungsi faktorial
 int faktorial(int n) {
@@ -813,7 +720,7 @@ int faktorial(int n) {
 - Variabel lokal : variabel yang hanya dapat diakses di dalam fungsi di mana variabel tersebut dideklarasikan.
 - Variabel global : variabel yang dapat diakses di seluruh program.
 
-Example :
+**Example :**
 ```c
 // Variabel lokal
 int fungsi(void) {
@@ -840,7 +747,7 @@ int main(void) {
 ### Pass by Value
 Pass by value adalah metode pengiriman nilai parameter ke fungsi. Ketika parameter dikirimkan dengan cara pass by value, maka nilai parameter disalin ke variabel lokal di dalam fungsi.
 
-Example :
+**Example :**
 ```c
 // Fungsi yang mengubah nilai parameter
 void ubah(int *a) {
@@ -863,7 +770,7 @@ int main(void) {
 ### Pass by Reference
 Pass by reference adalah metode pengiriman alamat parameter ke fungsi. Ketika parameter dikirimkan dengan cara pass by reference, maka fungsi dapat mengakses dan mengubah nilai parameter asli.
 
-Example :
+**Example :**
 ```c
 // Fungsi yang mengubah nilai parameter
 void ubah(int *a) {
@@ -895,7 +802,7 @@ Pointer adalah sebuah variabel yang menyimpan alamat memori dari variabel lain. 
 
 Untuk mendeklarasikan pointer, kita perlu menambahkan tanda asterisk (*) di depan nama variabel.
 
-Example :
+**Example :**
 ```c
 int *p;
 ```
@@ -909,7 +816,7 @@ Pass by reference adalah teknik untuk meneruskan nilai variabel ke fungsi dengan
 
 Untuk menggunakan pointer untuk pass by reference, kita perlu menggunakan operator `&` untuk mengambil alamat memori variabel.
 
-Example :
+**Example :**
 ```c
 void ubahNilai(int *x) {
   *x = 10;
@@ -932,7 +839,7 @@ Saat fungsi `ubahNilai()` kembali, nilai variabel `a` juga akan berubah menjadi 
 ### Pointer untuk mengakses array
 Pointer dapat digunakan untuk mengakses elemen array dengan cara menggunakan operator `*` untuk mendereferensi pointer. 
 
-*Example :*
+**Example :**
 ```c
 int a[10];
 int *p = a;
@@ -992,7 +899,7 @@ void main() {
 - Memudahkan akses ke data
 - Meningkatkan keterbacaan kode
 
-Example :
+**Example :**
 ```c
 struct mahasiswa {
   char *nama;
@@ -1003,9 +910,9 @@ struct mahasiswa {
 void main() {
   struct mahasiswa mhs1;
 
-  mhs1.nama = "Andi";
-  mhs1.nim = 1234567890;
-  mhs1.ipk = 3.90;
+  mhs1.nama = "Fattan";
+  mhs1.nim = 23343037;
+  mhs1.ipk = 3.00;
 
   printf("Nama: %s\n", mhs1.nama);
   printf("NIM: %d\n", mhs1.nim);
@@ -1018,7 +925,7 @@ Typedef adalah tipe data baru yang dibuat berdasarkan tipe data yang sudah ada. 
 
 Untuk menggunakan typedef pada struct, kita perlu menggunakan kata kunci `typedef` kemudian diikuti dengan nama alias dan nama struct. 
 
-Example:
+**Example:**
 ```c
 typedef struct mahasiswa {
   char *nama;
@@ -1030,7 +937,7 @@ typedef struct mahasiswa {
 ### Struct Bersarang
 Struct dapat bersarang, yaitu struct di dalam struct. Struct bersarang dapat digunakan untuk menggabungkan data dari berbagai struct dalam satu variabel.
 
-Example :
+**Example :**
 ```c
 struct mahasiswa {
   char *nama;
