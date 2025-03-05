@@ -11,9 +11,9 @@
 <tr>
 <td>
 <b><pre>
-N A M A                   : F a t t a n  N a u f a n  I s l a m i<br>
+N A M A                   : F A T T A N  N A U F A N  I S L A M I<br>
 N I M                     : 2 3 3 4 3 0 3 7<br>
-P R O G R A M   S T U D I : I n f o r m a t i k a<br>
+P R O G R A M   S T U D I : I N F O R M A T I K A
 </pre></b>
 </td>
 </tr>
